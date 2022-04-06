@@ -15,18 +15,18 @@ permalinks:
 
 menu:
   main:
-    - name: "Home"
+    - name: "Beranda"
       url: "/"
       weight: 1
-    - name: "About"
+    - name: "Sekilas"
       url: "/about/"
       weight: 2
-    - name: "Categories"
-      url: "/categories/"
-      weight: 3
-    - name: "Tags"
-      url: "/tags/"
-      weight: 4
+    #- name: "Categories"
+    #  url: "/categories/"
+    #  weight: 3
+    #- name: "Tags"
+    #  url: "/tags/"
+    #  weight: 4
     - name: "Subscribe"
       url: "/index.xml"
 
