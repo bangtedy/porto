@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Home on Teori Portofolio dan Analisis Investasi</title>
+    <title>Beranda on Teori Portofolio dan Analisis Investasi</title>
     <link>https://bangtedy.github.io/porto/</link>
-    <description>Recent content in Home on Teori Portofolio dan Analisis Investasi</description>
+    <description>Recent content in Beranda on Teori Portofolio dan Analisis Investasi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 31 Mar 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bangtedy.github.io/porto/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 08 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bangtedy.github.io/porto/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Pasar Modal</title>
+      <link>https://bangtedy.github.io/porto/post/2022/04/08/pasar-modal/</link>
+      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
+      
+      <guid>https://bangtedy.github.io/porto/post/2022/04/08/pasar-modal/</guid>
+      <description>Capaian PembelajaranSetelah mempelajari dengan baik modul ini mahasiswa diharapkan mampu menjelaskan macam-macam pasar modal, bagaimana cara kerja, perkembangan dan kinerjanya. Secara khusus mahasiswa diharapkan mampu menjelaskan tentang:
+pasar modalpengertian dan proses pasar primer,pengertian dan proses pasar sekunder,perbedaan antara pasar OTC dan stock exchange,cara transaksi kas dan secara margin di pasar modal,pengertian dan proses short sale,pasar modal Indonesia dan strukturnya,fenomena underpricing di pasar modal Indonesia dan kinerjanya,macam-macam indeks di pasar modal Indonesia,IHSG sebagai pengukur kinerja pasar modal.</description>
+    </item>
+    
     <item>
       <title>Pengantar ke TPAI</title>
       <link>https://bangtedy.github.io/porto/post/2022/03/31/pengantar-ke-tpai/</link>

@@ -31,7 +31,7 @@ menu:
       url: "/index.xml"
 
 params:
-  description: ""
+  description: "EKSI4203"
   footer: "&copy; [Tedy Herlambang](https://bangtedy.github.io) 2022 | [Github](https://github.com/bangtedy)"
   highlightjsCDN: "//cdn.bootcss.com"
   highlightjsLang: ["r", "yaml", "tex"]

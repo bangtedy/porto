@@ -4,9 +4,11 @@ author: Tedy Herlambang
 date: '2022-03-31'
 slug: pengantar-ke-tpai
 categories:
-  - Pengantar
+  - Materi
 tags:
   - Pengantar
+  - Teori-Portofolio
+  - Analisis-Investasi
 ---
 
 ### Capaian Pembelajaran
