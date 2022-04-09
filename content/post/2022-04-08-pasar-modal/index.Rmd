@@ -11,8 +11,11 @@ tags:
   - modal
   - capital
 ---
+```{r load_packages, echo=FALSE}
+library ('fontawesome')
+```
 
-### Capaian Pembelajaran
+### `r fa("readme")` Capaian Pembelajaran
 
 Setelah mempelajari dengan baik modul ini mahasiswa diharapkan mampu menjelaskan macam-macam pasar modal, bagaimana cara kerja, perkembangan dan kinerjanya. Secara khusus mahasiswa diharapkan mampu menjelaskan tentang:
 
@@ -29,10 +32,10 @@ Setelah mempelajari dengan baik modul ini mahasiswa diharapkan mampu menjelaskan
 
 <br />
 
-## KEGIATAN BELAJAR I
+## `r emo::ji('books')` KEGIATAN BELAJAR I
 ### MACAM-MACAM PASAR MODAL
 
-Transaki di pasar modal lewat dua proses: pasar primer dan pasar sekunder
+Transaksi di pasar modal lewat dua proses: pasar primer dan pasar sekunder
 
 A. PASAR PRIMER
 
@@ -60,6 +63,9 @@ B. BANKIR INVESTASI
   + menyebarkan risiko
   + menyatukan kekuatan modal
   
+![](sindikat-uwriter.png)
+ 
+ 
 C. PROSES PEMBELIAN SAHAM PERDANA
 
 - Masyarakat/investor dapat membeli saham IPO dengan memesan (subscribe) ke bankir investasi.
@@ -114,12 +120,23 @@ $$
 2. Penjualan Pendek
 3. Penjualan Pendek di mata investor
 
-> PERHATIKAN CONTOH 2.1, 2.2 DAN 2.3
+PERHATIKAN JUGA CONTOH 2.1, 2.2 DAN 2.3
+
+Contoh Penghitungan: persentase margin adalah rasio antara nilai ekuitas (*equity value*) dengan nilai pasar (*market value*) sekuritas. Misalkan seorang investor mula-mula membayar 6,000 untuk pembelian saham senilai 10,000 (100 lembar saham dengan harga 100 per lembar), meminjam sisanya yaitu 4,000 dari pialang. Neraca mula-mula akan kelihatan seperti berikut: 
+
+![](neraca-mula-mula.png)
+
+Jika harga saham turun menjadi 70 per lembar, maka neraca akan seperti berikut:
+
+![](neraca-perubahan.png)
+Jika margin pemeliharaan (*maintenance margin*) sebesar 30%, berapa harga saham terendah sebelum investor mendapat *margin call*?
+
+![](harga-margin-call.png)
 
 ---
 
 
-## KEGIATAN BELAJAR 2
+## `r emo::ji('books')` KEGIATAN BELAJAR 2
 ### PASAR MODAL INDONESIA
 
 A. PERKEMBANGAN PASAR MODAL INDONESIA
@@ -128,7 +145,7 @@ A. PERKEMBANGAN PASAR MODAL INDONESIA
 - 10 Agustus 1977 Bursa efek dibuka kembali ditandai dengan go public PT Semen Cibinong sebagai emiten pertama
 - 02 Maret 2009 Penggabungan BES dan BEJ menjadi BEI
 
-B. STRUKTUR DAN PROSES PASAR MODEL INDONESIA
+B. STRUKTUR DAN PROSES PASAR MODAL INDONESIA
 
 Proses perdagangan di pasar modal
 
@@ -146,6 +163,12 @@ C. KINERJA PASAR MODAL
 
 - Menggunakan berbagai indeks, sekaligus mengukur perkembangan dari waktu ke waktu.
 - Perhatikan berbagai indeks: IHSG, Indeks LQ-45, Indeks Sektoral, Indeks SRI-KEHATI, dll
+
+<div class="fa-1x">
+  <i class="fas fa-spinner fa-spin"></i>
+  <i class="fas fa-circle-notch fa-spin"></i>
+</div>
+
 
 <!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_16 a2a_default_style"; data-a2a-url="https://bangtedy.github.io/porto" data-a2a-title="Pasar Modal">
