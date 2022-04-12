@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Materi on Teori Portofolio dan Analisis Investasi</title>
-    <link>https://bangtedy.github.io/porto/categories/materi/</link>
-    <description>Recent content in Materi on Teori Portofolio dan Analisis Investasi</description>
+    <title>tingkat pengembalian on Teori Portofolio dan Analisis Investasi</title>
+    <link>https://bangtedy.github.io/porto/tags/tingkat-pengembalian/</link>
+    <description>Recent content in tingkat pengembalian on Teori Portofolio dan Analisis Investasi</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bangtedy.github.io/porto/categories/materi/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 12 Apr 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bangtedy.github.io/porto/tags/tingkat-pengembalian/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Return dan Risiko</title>
       <link>https://bangtedy.github.io/porto/post/2022/04/12/return-dan-risiko/</link>
@@ -16,16 +16,6 @@
       <description>PendahuluanModul ini membahas secara rinci dua faktor utama dalam mengambil keputusan investasi yaitu return dan risiko. Berbagai jenis return dan risk serta cara penghitungannya juga dibahas di modul ini.
 Setelah mempelajari dengan baik modul ini Anda diharapkan mampu menghitung return dan risiko untuk aset tunggal dan portofolio dan konsep diversifikasi. Secara khusus Anda diharapkan mampu:
 menjelaskan pengertiareturn suatu investasi,menjelaskan pengertian return aset tunggal,menjelaskan return realisasian,menjelaskan return ekspektasian,menjelaskan risiko aset tunggal,menjelaskan koefisien variasi,menjelaskan pengertian return portofolio,menjelaskan return portofolio ekspektasian,menjelaskan pengertian risiko portofolio,menjelaskan risiko portofolio dua aset,menjelaskan risiko portofolio banyak aset, danmenjelaskan pengertian diversifikasi risiko portofolio.</description>
-    </item>
-    
-    <item>
-      <title>Pasar Modal</title>
-      <link>https://bangtedy.github.io/porto/post/2022/04/08/pasar-modal/</link>
-      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://bangtedy.github.io/porto/post/2022/04/08/pasar-modal/</guid>
-      <description>Capaian PembelajaranSetelah mempelajari dengan baik modul ini mahasiswa diharapkan mampu menjelaskan macam-macam pasar modal, bagaimana cara kerja, perkembangan dan kinerjanya. Secara khusus mahasiswa diharapkan mampu menjelaskan tentang:
-pasar modalpengertian dan proses pasar primer,pengertian dan proses pasar sekunder,perbedaan antara pasar OTC dan stock exchange,cara transaksi kas dan secara margin di pasar modal,pengertian dan proses short sale,pasar modal Indonesia dan strukturnya,fenomena underpricing di pasar modal Indonesia dan kinerjanya,macam-macam indeks di pasar modal Indonesia,IHSG sebagai pengukur kinerja pasar modal.</description>
     </item>
     
   </channel>

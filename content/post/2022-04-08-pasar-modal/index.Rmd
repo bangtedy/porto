@@ -11,6 +11,7 @@ tags:
   - modal
   - capital
 ---
+
 ```{r load_packages, echo=FALSE}
 library ('fontawesome')
 ```

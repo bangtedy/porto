@@ -1,0 +1,71 @@
+---
+title: Return dan Risiko
+author: Tedy Herlambang
+date: '2022-04-12'
+slug: return-dan-risiko
+categories:
+  - Materi
+tags:
+  - return
+  - risiko
+  - risk
+  - tingkat pengembalian
+---
+
+```{r load_packages, echo=FALSE}
+library ('fontawesome')
+```
+
+### `r fa("readme")` Pendahuluan
+
+Modul ini membahas secara rinci dua faktor utama dalam mengambil keputusan investasi yaitu *return* dan risiko. Berbagai jenis return dan risk serta cara penghitungannya juga dibahas di modul ini.
+
+Setelah mempelajari dengan baik modul ini Anda diharapkan mampu menghitung return dan risiko untuk aset tunggal dan portofolio dan konsep diversifikasi. Secara khusus Anda diharapkan mampu:
+
+- [x] menjelaskan pengertiareturn suatu investasi,
+- [x] menjelaskan pengertian return aset tunggal,
+- [x] menjelaskan return realisasian,
+- [x] menjelaskan return ekspektasian,
+- [x] menjelaskan risiko aset tunggal,
+- [x] menjelaskan koefisien variasi,
+- [x] menjelaskan pengertian return portofolio,
+- [x] menjelaskan return portofolio ekspektasian,
+- [x] menjelaskan pengertian risiko portofolio,
+- [x] menjelaskan risiko portofolio dua aset,
+- [x] menjelaskan risiko portofolio banyak aset, dan
+- [x] menjelaskan pengertian diversifikasi risiko portofolio.
+
+
+
+## `r emo::ji('books')` KEGIATAN BELAJAR 1
+
+### Return dan Risiko Aset Tunggal
+
+A. RETURN ASET TUNGGAL
+
+B. RISIKO ASET TUNGGAL
+
+C. KOEFISIEN VARIASI
+
+
+## `r emo::ji('books')` KEGIATAN BELAJAR 2
+
+A. TUJUAN MEMBUAT PORTOFOLIO
+
+B. RETURN PORTOFOLIO
+
+C. RISIKO PORTOFOLIO
+
+D. DIVERSIFIKASI RISIKO PORTOFOLIO
+
+
+
+<!-- AddToAny BEGIN -->
+<div class="a2a_kit a2a_kit_size_16 a2a_default_style"; data-a2a-url="https://bangtedy.github.io/porto" data-a2a-title="Return dan Risiko">
+<a class="a2a_button_facebook"></a>
+<a class="a2a_button_twitter"></a>
+<a class="a2a_button_whatsapp"></a>
+<a class="a2a_button_telegram"></a>
+</div>
+<script async src="https://static.addtoany.com/menu/page.js"></script>
+<!-- AddToAny END -->
