@@ -301,14 +301,15 @@ head(norm.prc)
 dt <- index(norm.prc)
 plot(x = dt,
      y = norm.prc$BNI,
-     xlab = "Date",
-     ylab = "Value of Investment",
+     xlab = "Tanggal",
+     ylab = "Nilai Investasi",
      ylim = y.range,
      type = "l",
      lwd = 2,
      main = "Nilai Investasi Rp 1 pada BNI, WSKT and ANTM")
 lines(x = dt, y = norm.prc$WSKT, col = "blue")
 lines(x = dt, y = norm.prc$ANTM, col = "red")
+abline(h = 1, lty = 2)
 legend ("topleft", c("BNI", "WSKT","ANTM"),
        lwd = c(2, 1, 1),
        col = c("black", "blue", "red"))

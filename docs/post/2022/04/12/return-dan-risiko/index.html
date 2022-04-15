@@ -449,14 +449,15 @@ head(norm.prc)</code></pre>
 <pre class="r"><code>dt &lt;- index(norm.prc)
 plot(x = dt,
      y = norm.prc$BNI,
-     xlab = &quot;Date&quot;,
-     ylab = &quot;Value of Investment&quot;,
+     xlab = &quot;Tanggal&quot;,
+     ylab = &quot;Nilai Investasi&quot;,
      ylim = y.range,
      type = &quot;l&quot;,
      lwd = 2,
      main = &quot;Nilai Investasi Rp 1 pada BNI, WSKT and ANTM&quot;)
 lines(x = dt, y = norm.prc$WSKT, col = &quot;blue&quot;)
 lines(x = dt, y = norm.prc$ANTM, col = &quot;red&quot;)
+abline(h = 1, lty = 2)
 legend (&quot;topleft&quot;, c(&quot;BNI&quot;, &quot;WSKT&quot;,&quot;ANTM&quot;),
        lwd = c(2, 1, 1),
        col = c(&quot;black&quot;, &quot;blue&quot;, &quot;red&quot;))</code></pre>
