@@ -15,18 +15,26 @@
 
     
       
-      <meta property="description" content=" PendahuluanModul ini membahas secara rinci dua faktor utama dalam mengambil keputusan investasi yaitu return dan risiko. Berbagai jenis return dan risk serta cara penghitungannya juga dibahas di &amp;hellip;">
-      <meta property="og:description" content=" PendahuluanModul ini membahas secara rinci dua faktor utama dalam mengambil keputusan investasi yaitu return dan risiko. Berbagai jenis return dan risk serta cara penghitungannya juga dibahas di &amp;hellip;">
+      <meta property="description" content="## Loading required package: zoo## ## Attaching package: &amp;#39;zoo&amp;#39;## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## as.Date, as.Date.numeric PendahuluanModul ini membahas &amp;hellip;">
+      <meta property="og:description" content="## Loading required package: zoo## ## Attaching package: &amp;#39;zoo&amp;#39;## The following objects are masked from &amp;#39;package:base&amp;#39;:## ## as.Date, as.Date.numeric PendahuluanModul ini membahas &amp;hellip;">
       
     
 
     
     
+    <meta name="twitter:image" content="https://bangtedy.github.io/porto/post/2022/04/12/return-dan-risiko/index_files/figure-html/impor_bni-1.png">
+    
+    
 
     
 
     
     
+
+
+<link href='//cdn.bootcss.com/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
+
+
 
     <link rel="stylesheet" href="/porto/css/style.css" />
     <link rel="stylesheet" href="/porto/css/fonts.css" />
@@ -82,6 +90,12 @@
 
 
 
+<pre><code>## Loading required package: zoo</code></pre>
+<pre><code>## 
+## Attaching package: &#39;zoo&#39;</code></pre>
+<pre><code>## The following objects are masked from &#39;package:base&#39;:
+## 
+##     as.Date, as.Date.numeric</code></pre>
 <div id="pendahuluan" class="section level3">
 <h3><svg aria-hidden="true" role="img" viewBox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M528.3 46.5H388.5c-48.1 0-89.9 33.3-100.4 80.3-10.6-47-52.3-80.3-100.4-80.3H48c-26.5 0-48 21.5-48 48v245.8c0 26.5 21.5 48 48 48h89.7c102.2 0 132.7 24.4 147.3 75 .7 2.8 5.2 2.8 6 0 14.7-50.6 45.2-75 147.3-75H528c26.5 0 48-21.5 48-48V94.6c0-26.4-21.3-47.9-47.7-48.1zM242 311.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5V289c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V251zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H78.2c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm259.3 121.7c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.9c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5V228c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5v22.9zm0-60.9c0 1.9-1.5 3.5-3.5 3.5H337.5c-1.9 0-3.5-1.5-3.5-3.5v-22.8c0-1.9 1.5-3.5 3.5-3.5h160.4c1.9 0 3.5 1.5 3.5 3.5V190z"/></svg> Pendahuluan</h3>
 <p>Modul ini membahas secara rinci dua faktor utama dalam mengambil keputusan investasi yaitu <em>return</em> dan risiko. Berbagai jenis return dan risk serta cara penghitungannya juga dibahas di modul ini.</p>
@@ -298,6 +312,151 @@ Dua komponen Risiko Portofolio</p>
 <li>risiko spesifik/unik/sistematik –&gt;non diversifiable/market risk</li>
 </ul></li>
 </ul>
+<div id="ilustrasi-perbandingan-kinerja-saham-menggunakan-r" class="section level3">
+<h3>Ilustrasi Perbandingan Kinerja Saham Menggunakan R</h3>
+<p>Dengan menggunakan komputer kita tidak perlu lagi menghitung secara manual return, risiko, SD, Var, Cov dll. Berikut sebagai ilustrasi bagaimana membandingkan kinerja beberapa saham dengan menggunakan software <a href="https://www.r-project.org/">R</a>. Saham yang akan dibandingkan adalah saham BNI, PT Waskita Karya, dan PT Aneka Tambang.</p>
+<pre class="r"><code># Mengimpor data saham BNI dari finance.yahoo.com
+data.bni &lt;- load.data(&quot;BBNI.JK.csv&quot;, &quot;BNI&quot;)
+head(data.bni) # data dimulai dari 15 April 2021</code></pre>
+<pre><code>##            BNI.Open BNI.High BNI.Low BNI.Close BNI.Volume BNI.Adjusted
+## 2021-04-15     5950     6025    5900      5975   17975900     5866.750
+## 2021-04-16     6025     6050    5875      5950   17665900     5842.202
+## 2021-04-19     5900     5975    5825      5875   11917800     5768.561
+## 2021-04-20     5875     5925    5800      5925    8272500     5817.655
+## 2021-04-21     5875     5875    5750      5775   13227700     5670.373
+## 2021-04-22     5800     5825    5650      5675   28608300     5572.185</code></pre>
+<pre class="r"><code>tail (data.bni) # data terakhir 14 April 2022</code></pre>
+<pre><code>##            BNI.Open BNI.High BNI.Low BNI.Close BNI.Volume BNI.Adjusted
+## 2022-04-07     8150     8300    8075      8300   26910300         8300
+## 2022-04-08     8325     8450    8250      8425   41911800         8425
+## 2022-04-11     8500     8500    8350      8400   35747700         8400
+## 2022-04-12     8400     8475    8275      8425   27774600         8425
+## 2022-04-13     8525     8525    8375      8450   28560500         8450
+## 2022-04-14     8450     8500    8350      8400   17990600         8400</code></pre>
+<pre class="r"><code>names(data.bni) # melihat nama-nama variabel </code></pre>
+<pre><code>## [1] &quot;BNI.Open&quot;     &quot;BNI.High&quot;     &quot;BNI.Low&quot;      &quot;BNI.Close&quot;    &quot;BNI.Volume&quot;  
+## [6] &quot;BNI.Adjusted&quot;</code></pre>
+<pre class="r"><code>plot(data.bni$BNI.Close) # plotting harga saham penutupan BNI</code></pre>
+<p><img src="https://bangtedy.github.io/porto/post/2022/04/12/return-dan-risiko/index_files/figure-html/impor_bni-1.png" width="672" /></p>
+<pre class="r"><code>summary(data.bni$BNI.Close)</code></pre>
+<pre><code>##      Index              BNI.Close   
+##  Min.   :2021-04-15   Min.   :4580  
+##  1st Qu.:2021-07-18   1st Qu.:5325  
+##  Median :2021-10-16   Median :6662  
+##  Mean   :2021-10-16   Mean   :6359  
+##  3rd Qu.:2022-01-13   3rd Qu.:7156  
+##  Max.   :2022-04-14   Max.   :8500</code></pre>
+<pre class="r"><code># Kita lakukan hal yang sama untuk saham PT Waskita Karya
+data.wskt &lt;- load.data(&quot;WSKT.JK.csv&quot;, &quot;WSKT&quot;)
+head(data.wskt) # data dimulai dari 15 April 2021</code></pre>
+<pre><code>##            WSKT.Open WSKT.High WSKT.Low WSKT.Close WSKT.Volume WSKT.Adjusted
+## 2021-04-15      1035      1065     1020       1020    43199300          1020
+## 2021-04-16      1030      1045     1015       1015    27119500          1015
+## 2021-04-19      1020      1090     1020       1080    88913100          1080
+## 2021-04-20      1080      1085     1050       1060    34441200          1060
+## 2021-04-21      1060      1080     1035       1065    26142900          1065
+## 2021-04-22      1080      1090     1050       1070    28027300          1070</code></pre>
+<pre class="r"><code>tail (data.wskt) # data terakhir 14 April 2022</code></pre>
+<pre><code>##            WSKT.Open WSKT.High WSKT.Low WSKT.Close WSKT.Volume WSKT.Adjusted
+## 2022-04-07       545       545      535        535    18894600           535
+## 2022-04-08       535       545      530        545    28163900           545
+## 2022-04-11       545       545      515        520    46212800           520
+## 2022-04-12       520       535      520        530    25672200           530
+## 2022-04-13       535       540      525        530    18395300           530
+## 2022-04-14       535       540      520        535    34015800           535</code></pre>
+<pre class="r"><code>names(data.wskt) # melihat nama-nama variabel </code></pre>
+<pre><code>## [1] &quot;WSKT.Open&quot;     &quot;WSKT.High&quot;     &quot;WSKT.Low&quot;      &quot;WSKT.Close&quot;   
+## [5] &quot;WSKT.Volume&quot;   &quot;WSKT.Adjusted&quot;</code></pre>
+<pre class="r"><code>plot(data.wskt$WSKT.Close) # plotting harga saham penutupan WSKT</code></pre>
+<p><img src="https://bangtedy.github.io/porto/post/2022/04/12/return-dan-risiko/index_files/figure-html/impor_waskita-1.png" width="672" /></p>
+<pre class="r"><code>summary(data.wskt$WSKT.Close)</code></pre>
+<pre><code>##      Index              WSKT.Close  
+##  Min.   :2021-04-15   Min.   : 520  
+##  1st Qu.:2021-07-18   1st Qu.: 635  
+##  Median :2021-10-16   Median : 835  
+##  Mean   :2021-10-16   Mean   : 815  
+##  3rd Qu.:2022-01-13   3rd Qu.: 960  
+##  Max.   :2022-04-14   Max.   :1135</code></pre>
+<pre class="r"><code># Kita lakukan hal yang sama untuk saham PT ANEKA Tambang, Tbk
+
+data.antm &lt;- load.data(&quot;ANTM.JK.csv&quot;, &quot;ANTM&quot;)
+head(data.antm) # data dimulai dari 15 April 2021</code></pre>
+<pre><code>##            ANTM.Open ANTM.High ANTM.Low ANTM.Close ANTM.Volume ANTM.Adjusted
+## 2021-04-15      2340      2350     2300       2320   109175800       2303.26
+## 2021-04-16      2340      2420     2310       2390   173387400       2390.00
+## 2021-04-19      2350      2370     2300       2340    91552300       2340.00
+## 2021-04-20      2330      2360     2300       2350    60372200       2350.00
+## 2021-04-21      2320      2400     2300       2370   112742900       2370.00
+## 2021-04-22      2380      2440     2350       2350   119644900       2350.00</code></pre>
+<pre class="r"><code>tail (data.antm) # data terakhir 14 April 2022</code></pre>
+<pre><code>##            ANTM.Open ANTM.High ANTM.Low ANTM.Close ANTM.Volume ANTM.Adjusted
+## 2022-04-07      2670      2820     2660       2760   286617900          2760
+## 2022-04-08      2790      2820     2740       2800   189362100          2800
+## 2022-04-11      2800      2810     2630       2630   163864600          2630
+## 2022-04-12      2620      2680     2580       2670    88390900          2670
+## 2022-04-13      2690      2800     2670       2790   143822800          2790
+## 2022-04-14      2790      2870     2750       2780   201698200          2780</code></pre>
+<pre class="r"><code>names(data.antm) # melihat nama-nama variabel </code></pre>
+<pre><code>## [1] &quot;ANTM.Open&quot;     &quot;ANTM.High&quot;     &quot;ANTM.Low&quot;      &quot;ANTM.Close&quot;   
+## [5] &quot;ANTM.Volume&quot;   &quot;ANTM.Adjusted&quot;</code></pre>
+<pre class="r"><code>plot(data.antm$ANTM.Close) # plotting harga saham penutupan WSKT</code></pre>
+<p><img src="https://bangtedy.github.io/porto/post/2022/04/12/return-dan-risiko/index_files/figure-html/impor_antm-1.png" width="672" /></p>
+<pre class="r"><code>summary(data.antm$ANTM.Close)</code></pre>
+<pre><code>##      Index              ANTM.Close  
+##  Min.   :2021-04-15   Min.   :1725  
+##  1st Qu.:2021-07-18   1st Qu.:2270  
+##  Median :2021-10-16   Median :2350  
+##  Mean   :2021-10-16   Mean   :2344  
+##  3rd Qu.:2022-01-13   3rd Qu.:2470  
+##  Max.   :2022-04-14   Max.   :2840</code></pre>
+<pre class="r"><code># Kita kombinasikan semua data harga penutupan menjadi satu
+close.prc &lt;- cbind(data.bni$BNI.Close, data.wskt$WSKT.Close, data.antm$ANTM.Close)
+names(close.prc)  &lt;-  c(&quot;BNI&quot;, &quot;WSKT&quot;, &quot;ANTM&quot;)
+head(close.prc) # cek data apakah sudah betul</code></pre>
+<pre><code>##             BNI WSKT ANTM
+## 2021-04-15 5975 1020 2320
+## 2021-04-16 5950 1015 2390
+## 2021-04-19 5875 1080 2340
+## 2021-04-20 5925 1060 2350
+## 2021-04-21 5775 1065 2370
+## 2021-04-22 5675 1070 2350</code></pre>
+<pre class="r"><code># Selanjutnya kita normalkan data agar perbandingan kinerja saham lebih adil
+(first.bni &lt;- as.numeric(data.bni[1, 4]))</code></pre>
+<pre><code>## [1] 5975</code></pre>
+<pre class="r"><code>(first.wskt &lt;- as.numeric(data.wskt[1, 4]))</code></pre>
+<pre><code>## [1] 1020</code></pre>
+<pre class="r"><code>(first.antm &lt;- as.numeric(data.antm[1, 4]))</code></pre>
+<pre><code>## [1] 2320</code></pre>
+<pre class="r"><code>norm.prc &lt;- close.prc
+norm.prc$BNI &lt;- norm.prc$BNI/first.bni
+norm.prc$WSKT &lt;- norm.prc$WSKT/first.wskt
+norm.prc$ANTM &lt;- norm.prc$ANTM/first.antm
+head(norm.prc)</code></pre>
+<pre><code>##                  BNI     WSKT     ANTM
+## 2021-04-15 1.0000000 1.000000 1.000000
+## 2021-04-16 0.9958159 0.995098 1.030172
+## 2021-04-19 0.9832636 1.058824 1.008621
+## 2021-04-20 0.9916318 1.039216 1.012931
+## 2021-04-21 0.9665272 1.044118 1.021552
+## 2021-04-22 0.9497908 1.049020 1.012931</code></pre>
+<pre class="r"><code># Plot the Capital Appreciation of Each Security
+(y.range &lt;- range(norm.prc))</code></pre>
+<pre><code>## [1] 0.5098039 1.4225941</code></pre>
+<pre class="r"><code>dt &lt;- index(norm.prc)
+plot(x = dt,
+     y = norm.prc$BNI,
+     xlab = &quot;Date&quot;,
+     ylab = &quot;Value of Investment&quot;,
+     ylim = y.range,
+     type = &quot;l&quot;,
+     lwd = 2,
+     main = &quot;Nilai Investasi Rp 1 pada BNI, WSKT and ANTM&quot;)
+lines(x = dt, y = norm.prc$WSKT, col = &quot;blue&quot;)
+lines(x = dt, y = norm.prc$ANTM, col = &quot;red&quot;)
+legend (&quot;topleft&quot;, c(&quot;BNI&quot;, &quot;WSKT&quot;,&quot;ANTM&quot;),
+       lwd = c(2, 1, 1),
+       col = c(&quot;black&quot;, &quot;blue&quot;, &quot;red&quot;))</code></pre>
+<p><img src="https://bangtedy.github.io/porto/post/2022/04/12/return-dan-risiko/index_files/figure-html/perbandingan_kinerja_secara_visual-1.png" width="672" /></p>
 <!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_16 a2a_default_style"; data-a2a-url="https://bangtedy.github.io/porto" data-a2a-title="Return dan Risiko">
 <a class="a2a_button_facebook"></a>
@@ -307,6 +466,7 @@ Dua komponen Risiko Portofolio</p>
 </div>
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 <!-- AddToAny END -->
+</div>
 </div>
 
 
@@ -328,6 +488,19 @@ Dua komponen Risiko Portofolio</p>
 <script async src="//yihui.org/js/center-img.js"></script>
 
   
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script src="//cdn.bootcss.com/highlight.js/9.12.0/languages/tex.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
   
   <hr>
