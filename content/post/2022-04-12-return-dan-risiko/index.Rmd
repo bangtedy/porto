@@ -43,18 +43,103 @@ Setelah mempelajari dengan baik modul ini Anda diharapkan mampu menghitung retur
 
 A. RETURN ASET TUNGGAL
 
+- Return: hasil yang diperoleh dari investasi
+  + return realisasian (*realised return)
+  + return ekspektasian
+- Return realisasian: untuk mengukur kinerja investasi
+  + return yang telah terjadi
+  + dihitung dengan data historis
+  + dasar untuk menghitung return ekspektasian dan risiko dimasa yad.
+-Return ekspektasian:
+  + belum terjadi tetapi diharapkan diperoleh di masa yad
+
+#### 1. Return Realisasian
+
+a. Return Total= capital gain (loss) + Yield
+
+  + capital gain: kenaikan atau penurunan nilai investasi $(P_t - P_{(t-1)})/P_{(t-1)}$
+  + Yield: income dari investasi
+
+$$R_t = \frac {P_t - P_{(t-1)}} {P_{(t-1)}} + \frac {I_t}{P_{(t-1)}} $$ 
+Catatan:
+
+  + $R_t$ = Return periode t dari aset
+  + $P_t$ = Harga periode t pada saat aset dijual
+  + $P_{t-1}$ = Harga periode t-1 pada saat aset dibeli
+  + $I_t$ = Income yang diperoleh dari pemanfaatan aset
+  + $\frac {P_t - P_{(t-1)}} {P_{(t-1)}}$ = capital gain atau loss
+  + $\frac {I_t}{P_{(t-1)}}$ = Yield
+
+b. Relatif Return
+
+Relatif return: hasil investasi $(P_t)$ relatif tehrdap nilai investasinya $(P_{t-1})$
+
+$$Relatif \,Return_t =  \frac {P_t}{P_{t-1}} $$
+Jika dividen diperhitungkan menjadi:
+
+$$Relatif \,Return_t =  \frac {P_t}{P_{t-1}} + \frac {D_t}{P_{t-1}} $$
+
+#### 2. Return Ekspektasian
+
+- dihitung dari rataan data historis (asumsi re sama dengan rataan data historis)
+  + rata-rata aritmetika
+  + rata-rata geometrik
+
+a. Rata-rata aritmetika E(R)
+
+\begin{align*}
+E(R_i) & = \frac {R_1 + R_2 + R_3 + ...+ R_n} {n}\\
+E(R_i) & = \frac {\sum_{x = 1}^{n} R_i}{n}
+\end{align*}
+
+Keterangan:
+
+  + E(Ri) = return ekspektasian saham i
+  + Ri = return historis saham i
+  + n = jumlah return historis
+
+b. Rata-rata Geometrik
+
+
 B. RISIKO ASET TUNGGAL
 
+- Risiko diartikan sebagai penyimpangan atau deviasi dari hasil yang diekspektasikan.
+- Menggunakan rumus deviasi standar (*standard deviation*)
+- Rumus deviasi standar:
+
+$$   
+SD = \sigma = \sqrt \frac {{{\sum_{x = 1}^{n} [R_t} - {E(R)}}]^2} {n-1}
+$$
+
+Keterangan:
+
+- SD = standard deviation
+- Rt = nilai return ekspektasi periode ke-t
+- E(R) = nilai ekspektasian (rata-rata return historis)
+- n = jumlah observasi data historis untuk n>30. Jika n<30 digunakan n-1.
+
+
 C. KOEFISIEN VARIASI
+
+- Di dalam investasi dua faktor ini harus diperhatikan secara terintegrasi: return ekspektasian dan risiko aset, yaitu dengan menggunakan koefisien variasi (*coefficient of variation*):
+
+$$CV_i = \frac {Risiko}{Return\,Ekspektasian}$$
+Keterangan:
+
+- Risiko: gunakan nilai SD
+- Return ekspektasian: rata-rata aritmetika return historis
 
 
 ## `r emo::ji('books')` KEGIATAN BELAJAR 2
 
 A. TUJUAN MEMBUAT PORTOFOLIO
 
+
 B. RETURN PORTOFOLIO
 
+
 C. RISIKO PORTOFOLIO
+
 
 D. DIVERSIFIKASI RISIKO PORTOFOLIO
 
