@@ -12,7 +12,7 @@ tags:
   - tingkat pengembalian
 ---
 
-```{r load_packages, echo=FALSE}
+```{r load_packages, echo=FALSE, message=FALSE, warning=FALSE}
 library ('fontawesome')
 library('xts')
 ```
@@ -23,7 +23,7 @@ Modul ini membahas secara rinci dua faktor utama dalam mengambil keputusan inves
 
 Setelah mempelajari dengan baik modul ini Anda diharapkan mampu menghitung return dan risiko untuk aset tunggal dan portofolio dan konsep diversifikasi. Secara khusus Anda diharapkan mampu:
 
-- [x] menjelaskan pengertiareturn suatu investasi,
+- [x] menjelaskan pengertian return suatu investasi,
 - [x] menjelaskan pengertian return aset tunggal,
 - [x] menjelaskan return realisasian,
 - [x] menjelaskan return ekspektasian,
