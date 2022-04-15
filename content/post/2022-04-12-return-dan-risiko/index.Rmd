@@ -134,15 +134,104 @@ Keterangan:
 
 A. TUJUAN MEMBUAT PORTOFOLIO
 
+- We need to be more tactical and not put all our eggs in one political basket
+- Spread the risks and do not risk everything on the success of one venture.
+
 
 B. RETURN PORTOFOLIO
+
+**1. Portofolio berisi 2 Aset**
+
+**Return Realisasian**
+
+$$ Rp = w_1 . R_1 + w_2 . R_2 $$
+
+Keterangan:
+
+- Rp = return realisasian portofolio
+- w1 = proporsi aset ke 1 di portofolio
+- w2 = proporsi aset ke 2 di portofolio
+- R1 = return realisasian sekuritas ke 1
+- R2 = return realisasian sekuritas ke 2.
+
+**Return Ekspektasian**
+
+$$ E (Rp) = w_1.E(R_1) + w_2 . E(R_2)$$ 
+
+Keterangan:
+
+- E(Rp) = return ekspektasian portofolio
+- w1 = proporsi aset ke 1 di portofolio
+- w2 = proporsi aset ke 2 di portofolio
+- E(R1) = return ekspektasian sekuritas ke 1
+- E(R2) = return ekspektasian sekuritas ke 2.
+
+**2. Portofolio berisi banyak Aset**
+
+**RETURN REALISASIAN**
+
+$$ Rp = w_1 . R_1 + w_2 . R_2 + w_3 . R_3 +...+ w_n .R_n $$
+
+atau dapat dituliskan sebagai:
+
+$$ Rp = {\sum_{x = 1}^{n} {(w_i.R_i)}}$$
+
+Keterangan:
+
+- Rp = return realisasian portofolio
+- wi = proporsi aset ke i di portofolio
+- Ri = return realisasian aset ke-i
+- n = jumlah dari aset tunggal di dalam portofolio
+
+
+**RETURN EKSPEKTASIAN**
+
+\begin{align*}
+E(Rp) & = w_1 . E(R_1) + w_2 . E(R_2) + w_3 . E(R_3) +...+ w_n .E(R_n)\\
+E(Rp) & = {\sum_{x = 1}^{n} {(w_i.E(R_i)}}
+\end{align*}
+
+
+Keterangan:
+
+- E(Rp) = return ekspektasian portofolio
+- wi = proporsi aset ke i di portofolio
+- E(Ri) = return ekspektasian aset ke-i
+- n = jumlah dari aset tunggal di dalam portofolio
 
 
 C. RISIKO PORTOFOLIO
 
+- Risiko portofolio tidak sama dengan rata-rata tertimbang dari risiko masing-masing aset, tetapi bisa lebih kecil.
+- Dua elemen risiko portofolio:
+  + komponen varian return sekuritas
+  + komponen kovarian return sekuritas
+- Risiko portofolio dua aset:
+
+$$\sigma_p^2 = w_1^2 \sigma_1^2+ w_2^2 \sigma_2^2+ w_1w_2 \sigma_{12}+w_2w_1 \sigma_{21}$$
+karena $\sigma_{12}$ simetris dengan $\sigma_{21}$ yang nilainya sama, maka rumus menjadi:
+
+$$ \sigma_p^2 = w_1^2 \sigma_1^2+ w_2^2 \sigma_2^2+ 2 w_1w_2 \sigma _{12}$$
+Rumus ini dapat dikembangkan untuk portofolio dengan n-aset:
+
+$$ \sigma_p^2 = [w_1^2 \sigma_1^2+ w_2^2 \sigma_2^2 + ...+ w_n^2 \sigma_n^2 ]+ [2 w_1w_2 \sigma _{12} + 2 w_1w_3 \sigma _{13}...+ 2 w_{n-1}w_n \sigma _{{n-1},n}]$$
+Dua komponen Risiko Portofolio
+
+**Varian**: semua varian dari aset-aset di dalam portofolio
+
+$$ VAR = \sigma^2 = SD^2 = \frac {\sum_{n=1}^{n} [R_t -E(R)]^2} {n-1} $$
+**Kovarian**: arah pergerakan dua buah variabel
+
+$$ Cov (R_A,R_B) = \sigma_{A,B} = \frac {{\sum_{n=1}^{n} [R_{A,t} - E(R_A)] [R_{B,t} -E(R_B)]}} {n-1} $$
 
 D. DIVERSIFIKASI RISIKO PORTOFOLIO
 
+- Risiko portofolio dapat turun karena *comovement* antara dua aset.
+- Risiko akan semakin turun jika nilai kovarian negatif.
+- Risiko portofolio akan semakin terdiversifikasi jika jumlah *comovement* semakin banyak.
+- Dua jenis risiko:
+  + risiko perusahaan --> dapat didiversifikasi/non sistematik
+  + risiko spesifik/unik/sistematik -->non diversifiable/market risk
 
 
 <!-- AddToAny BEGIN -->

@@ -217,9 +217,87 @@ Keterangan:</p>
 <div id="kegiatan-belajar-2" class="section level2">
 <h2>📚 KEGIATAN BELAJAR 2</h2>
 <p>A. TUJUAN MEMBUAT PORTOFOLIO</p>
+<ul>
+<li>We need to be more tactical and not put all our eggs in one political basket</li>
+<li>Spread the risks and do not risk everything on the success of one venture.</li>
+</ul>
 <p>B. RETURN PORTOFOLIO</p>
+<p><strong>1. Portofolio berisi 2 Aset</strong></p>
+<p><strong>Return Realisasian</strong></p>
+<p><span class="math display">\[ Rp = w_1 . R_1 + w_2 . R_2 \]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>Rp = return realisasian portofolio</li>
+<li>w1 = proporsi aset ke 1 di portofolio</li>
+<li>w2 = proporsi aset ke 2 di portofolio</li>
+<li>R1 = return realisasian sekuritas ke 1</li>
+<li>R2 = return realisasian sekuritas ke 2.</li>
+</ul>
+<p><strong>Return Ekspektasian</strong></p>
+<p><span class="math display">\[ E (Rp) = w_1.E(R_1) + w_2 . E(R_2)\]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>E(Rp) = return ekspektasian portofolio</li>
+<li>w1 = proporsi aset ke 1 di portofolio</li>
+<li>w2 = proporsi aset ke 2 di portofolio</li>
+<li>E(R1) = return ekspektasian sekuritas ke 1</li>
+<li>E(R2) = return ekspektasian sekuritas ke 2.</li>
+</ul>
+<p><strong>2. Portofolio berisi banyak Aset</strong></p>
+<p><strong>RETURN REALISASIAN</strong></p>
+<p><span class="math display">\[ Rp = w_1 . R_1 + w_2 . R_2 + w_3 . R_3 +...+ w_n .R_n \]</span></p>
+<p>atau dapat dituliskan sebagai:</p>
+<p><span class="math display">\[ Rp = {\sum_{x = 1}^{n} {(w_i.R_i)}}\]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>Rp = return realisasian portofolio</li>
+<li>wi = proporsi aset ke i di portofolio</li>
+<li>Ri = return realisasian aset ke-i</li>
+<li>n = jumlah dari aset tunggal di dalam portofolio</li>
+</ul>
+<p><strong>RETURN EKSPEKTASIAN</strong></p>
+<p><span class="math display">\[\begin{align*}
+E(Rp) &amp; = w_1 . E(R_1) + w_2 . E(R_2) + w_3 . E(R_3) +...+ w_n .E(R_n)\\
+E(Rp) &amp; = {\sum_{x = 1}^{n} {(w_i.E(R_i)}}
+\end{align*}\]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>E(Rp) = return ekspektasian portofolio</li>
+<li>wi = proporsi aset ke i di portofolio</li>
+<li>E(Ri) = return ekspektasian aset ke-i</li>
+<li>n = jumlah dari aset tunggal di dalam portofolio</li>
+</ul>
 <p>C. RISIKO PORTOFOLIO</p>
+<ul>
+<li>Risiko portofolio tidak sama dengan rata-rata tertimbang dari risiko masing-masing aset, tetapi bisa lebih kecil.</li>
+<li>Dua elemen risiko portofolio:
+<ul>
+<li>komponen varian return sekuritas</li>
+<li>komponen kovarian return sekuritas</li>
+</ul></li>
+<li>Risiko portofolio dua aset:</li>
+</ul>
+<p><span class="math display">\[\sigma_p^2 = w_1^2 \sigma_1^2+ w_2^2 \sigma_2^2+ w_1w_2 \sigma_{12}+w_2w_1 \sigma_{21}\]</span>
+karena <span class="math inline">\(\sigma_{12}\)</span> simetris dengan <span class="math inline">\(\sigma_{21}\)</span> yang nilainya sama, maka rumus menjadi:</p>
+<p><span class="math display">\[ \sigma_p^2 = w_1^2 \sigma_1^2+ w_2^2 \sigma_2^2+ 2 w_1w_2 \sigma _{12}\]</span>
+Rumus ini dapat dikembangkan untuk portofolio dengan n-aset:</p>
+<p><span class="math display">\[ \sigma_p^2 = [w_1^2 \sigma_1^2+ w_2^2 \sigma_2^2 + ...+ w_n^2 \sigma_n^2 ]+ [2 w_1w_2 \sigma _{12} + 2 w_1w_3 \sigma _{13}...+ 2 w_{n-1}w_n \sigma _{{n-1},n}]\]</span>
+Dua komponen Risiko Portofolio</p>
+<p><strong>Varian</strong>: semua varian dari aset-aset di dalam portofolio</p>
+<p><span class="math display">\[ VAR = \sigma^2 = SD^2 = \frac {\sum_{n=1}^{n} [R_t -E(R)]^2} {n-1} \]</span>
+<strong>Kovarian</strong>: arah pergerakan dua buah variabel</p>
+<p><span class="math display">\[ Cov (R_A,R_B) = \sigma_{A,B} = \frac {{\sum_{n=1}^{n} [R_{A,t} - E(R_A)] [R_{B,t} -E(R_B)]}} {n-1} \]</span></p>
 <p>D. DIVERSIFIKASI RISIKO PORTOFOLIO</p>
+<ul>
+<li>Risiko portofolio dapat turun karena <em>comovement</em> antara dua aset.</li>
+<li>Risiko akan semakin turun jika nilai kovarian negatif.</li>
+<li>Risiko portofolio akan semakin terdiversifikasi jika jumlah <em>comovement</em> semakin banyak.</li>
+<li>Dua jenis risiko:
+<ul>
+<li>risiko perusahaan –&gt; dapat didiversifikasi/non sistematik</li>
+<li>risiko spesifik/unik/sistematik –&gt;non diversifiable/market risk</li>
+</ul></li>
+</ul>
 <!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_16 a2a_default_style"; data-a2a-url="https://bangtedy.github.io/porto" data-a2a-title="Return dan Risiko">
 <a class="a2a_button_facebook"></a>
