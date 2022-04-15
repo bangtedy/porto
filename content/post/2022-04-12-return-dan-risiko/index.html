@@ -232,9 +232,10 @@ Dua komponen Risiko Portofolio</p>
 </ul>
 <div id="ilustrasi-perbandingan-kinerja-saham-menggunakan-r" class="section level3">
 <h3>Ilustrasi Perbandingan Kinerja Saham Menggunakan R</h3>
-<p>Dengan menggunakan komputer kita tidak perlu lagi menghitung secara manual return, risiko, SD, Var, Cov dll. Berikut sebagai ilustrasi bagaimana membandingkan kinerja beberapa saham dengan menggunakan software <a href="https://www.r-project.org/">R</a>. Saham yang akan dibandingkan adalah saham BNI, PT Waskita Karya, dan PT Aneka Tambang.</p>
-<pre class="r"><code># Mengimpor data saham BNI dari finance.yahoo.com
-data.bni &lt;- load.data(&quot;BBNI.JK.csv&quot;, &quot;BNI&quot;)
+<p>Dengan menggunakan komputer kita tidak perlu lagi menghitung secara manual return, risiko, SD, Var, Cov dll. Berikut sebagai ilustrasi bagaimana membandingkan kinerja beberapa saham dengan menggunakan software <a href="https://www.r-project.org/">R</a>. Data harga saham harian diunduh dari <a href="finance.yahoo.com">Yahoo Finance</a>. Saham yang akan dibandingkan adalah saham BNI, PT Waskita Karya, dan PT Aneka Tambang.</p>
+<div id="mengimpor-data-saham-bni.-perhatikan-ticker-saham-bni" class="section level4">
+<h4>Mengimpor data saham BNI. Perhatikan ticker saham BNI!</h4>
+<pre class="r"><code>data.bni &lt;- load.data(&quot;BBNI.JK.csv&quot;, &quot;BNI&quot;)
 head(data.bni) # data dimulai dari 15 April 2021</code></pre>
 <pre><code>##            BNI.Open BNI.High BNI.Low BNI.Close BNI.Volume BNI.Adjusted
 ## 2021-04-15     5950     6025    5900      5975   17975900     5866.750
@@ -254,7 +255,7 @@ head(data.bni) # data dimulai dari 15 April 2021</code></pre>
 <pre class="r"><code>names(data.bni) # melihat nama-nama variabel </code></pre>
 <pre><code>## [1] &quot;BNI.Open&quot;     &quot;BNI.High&quot;     &quot;BNI.Low&quot;      &quot;BNI.Close&quot;    &quot;BNI.Volume&quot;  
 ## [6] &quot;BNI.Adjusted&quot;</code></pre>
-<pre class="r"><code>plot(data.bni$BNI.Close) # plotting harga saham penutupan BNI</code></pre>
+<pre class="r"><code>plot(data.bni$BNI.Close) # plotting harga penutupan saham BNI</code></pre>
 <p><img src="{{< blogdown/postref >}}index_files/figure-html/impor_bni-1.png" width="672" /></p>
 <pre class="r"><code>summary(data.bni$BNI.Close)</code></pre>
 <pre><code>##      Index              BNI.Close   
@@ -264,8 +265,10 @@ head(data.bni) # data dimulai dari 15 April 2021</code></pre>
 ##  Mean   :2021-10-16   Mean   :6359  
 ##  3rd Qu.:2022-01-13   3rd Qu.:7156  
 ##  Max.   :2022-04-14   Max.   :8500</code></pre>
-<pre class="r"><code># Kita lakukan hal yang sama untuk saham PT Waskita Karya
-data.wskt &lt;- load.data(&quot;WSKT.JK.csv&quot;, &quot;WSKT&quot;)
+</div>
+<div id="kita-lakukan-hal-yang-sama-untuk-saham-pt-waskita-karya" class="section level4">
+<h4>Kita lakukan hal yang sama untuk saham PT Waskita Karya</h4>
+<pre class="r"><code>data.wskt &lt;- load.data(&quot;WSKT.JK.csv&quot;, &quot;WSKT&quot;)
 head(data.wskt) # data dimulai dari 15 April 2021</code></pre>
 <pre><code>##            WSKT.Open WSKT.High WSKT.Low WSKT.Close WSKT.Volume WSKT.Adjusted
 ## 2021-04-15      1035      1065     1020       1020    43199300          1020
@@ -285,7 +288,7 @@ head(data.wskt) # data dimulai dari 15 April 2021</code></pre>
 <pre class="r"><code>names(data.wskt) # melihat nama-nama variabel </code></pre>
 <pre><code>## [1] &quot;WSKT.Open&quot;     &quot;WSKT.High&quot;     &quot;WSKT.Low&quot;      &quot;WSKT.Close&quot;   
 ## [5] &quot;WSKT.Volume&quot;   &quot;WSKT.Adjusted&quot;</code></pre>
-<pre class="r"><code>plot(data.wskt$WSKT.Close) # plotting harga saham penutupan WSKT</code></pre>
+<pre class="r"><code>plot(data.wskt$WSKT.Close) # plotting harga penutupan saham WSKT</code></pre>
 <p><img src="{{< blogdown/postref >}}index_files/figure-html/impor_waskita-1.png" width="672" /></p>
 <pre class="r"><code>summary(data.wskt$WSKT.Close)</code></pre>
 <pre><code>##      Index              WSKT.Close  
@@ -295,9 +298,10 @@ head(data.wskt) # data dimulai dari 15 April 2021</code></pre>
 ##  Mean   :2021-10-16   Mean   : 815  
 ##  3rd Qu.:2022-01-13   3rd Qu.: 960  
 ##  Max.   :2022-04-14   Max.   :1135</code></pre>
-<pre class="r"><code># Kita lakukan hal yang sama untuk saham PT ANEKA Tambang, Tbk
-
-data.antm &lt;- load.data(&quot;ANTM.JK.csv&quot;, &quot;ANTM&quot;)
+</div>
+<div id="kita-lakukan-hal-yang-sama-lagi-untuk-saham-pt-aneka-tambang-tbk" class="section level4">
+<h4>Kita lakukan hal yang sama lagi untuk saham PT ANEKA Tambang, Tbk</h4>
+<pre class="r"><code>data.antm &lt;- load.data(&quot;ANTM.JK.csv&quot;, &quot;ANTM&quot;)
 head(data.antm) # data dimulai dari 15 April 2021</code></pre>
 <pre><code>##            ANTM.Open ANTM.High ANTM.Low ANTM.Close ANTM.Volume ANTM.Adjusted
 ## 2021-04-15      2340      2350     2300       2320   109175800       2303.26
@@ -317,7 +321,7 @@ head(data.antm) # data dimulai dari 15 April 2021</code></pre>
 <pre class="r"><code>names(data.antm) # melihat nama-nama variabel </code></pre>
 <pre><code>## [1] &quot;ANTM.Open&quot;     &quot;ANTM.High&quot;     &quot;ANTM.Low&quot;      &quot;ANTM.Close&quot;   
 ## [5] &quot;ANTM.Volume&quot;   &quot;ANTM.Adjusted&quot;</code></pre>
-<pre class="r"><code>plot(data.antm$ANTM.Close) # plotting harga saham penutupan WSKT</code></pre>
+<pre class="r"><code>plot(data.antm$ANTM.Close) # plotting harga penutupan saham WSKT</code></pre>
 <p><img src="{{< blogdown/postref >}}index_files/figure-html/impor_antm-1.png" width="672" /></p>
 <pre class="r"><code>summary(data.antm$ANTM.Close)</code></pre>
 <pre><code>##      Index              ANTM.Close  
@@ -327,8 +331,10 @@ head(data.antm) # data dimulai dari 15 April 2021</code></pre>
 ##  Mean   :2021-10-16   Mean   :2344  
 ##  3rd Qu.:2022-01-13   3rd Qu.:2470  
 ##  Max.   :2022-04-14   Max.   :2840</code></pre>
-<pre class="r"><code># Kita kombinasikan semua data harga penutupan menjadi satu
-close.prc &lt;- cbind(data.bni$BNI.Close, data.wskt$WSKT.Close, data.antm$ANTM.Close)
+</div>
+<div id="kita-kombinasikan-semua-data-harga-penutupan-menjadi-satu" class="section level4">
+<h4>Kita kombinasikan semua data harga penutupan menjadi satu</h4>
+<pre class="r"><code>close.prc &lt;- cbind(data.bni$BNI.Close, data.wskt$WSKT.Close, data.antm$ANTM.Close)
 names(close.prc)  &lt;-  c(&quot;BNI&quot;, &quot;WSKT&quot;, &quot;ANTM&quot;)
 head(close.prc) # cek data apakah sudah betul</code></pre>
 <pre><code>##             BNI WSKT ANTM
@@ -338,8 +344,10 @@ head(close.prc) # cek data apakah sudah betul</code></pre>
 ## 2021-04-20 5925 1060 2350
 ## 2021-04-21 5775 1065 2370
 ## 2021-04-22 5675 1070 2350</code></pre>
-<pre class="r"><code># Selanjutnya kita normalkan data agar perbandingan kinerja saham lebih adil
-(first.bni &lt;- as.numeric(data.bni[1, 4]))</code></pre>
+</div>
+<div id="selanjutnya-kita-normalkan-data-agar-perbandingan-kinerja-saham-lebih-adil" class="section level4">
+<h4>Selanjutnya kita normalkan data agar perbandingan kinerja saham lebih adil</h4>
+<pre class="r"><code>(first.bni &lt;- as.numeric(data.bni[1, 4]))</code></pre>
 <pre><code>## [1] 5975</code></pre>
 <pre class="r"><code>(first.wskt &lt;- as.numeric(data.wskt[1, 4]))</code></pre>
 <pre><code>## [1] 1020</code></pre>
@@ -357,8 +365,10 @@ head(norm.prc)</code></pre>
 ## 2021-04-20 0.9916318 1.039216 1.012931
 ## 2021-04-21 0.9665272 1.044118 1.021552
 ## 2021-04-22 0.9497908 1.049020 1.012931</code></pre>
-<pre class="r"><code># Plot the Capital Appreciation of Each Security
-(y.range &lt;- range(norm.prc))</code></pre>
+</div>
+<div id="plot-apresiasi-kapital-masing-masing-sekuritas" class="section level4">
+<h4>Plot Apresiasi Kapital Masing-Masing Sekuritas</h4>
+<pre class="r"><code>(y.range &lt;- range(norm.prc))</code></pre>
 <pre><code>## [1] 0.5098039 1.4225941</code></pre>
 <pre class="r"><code>dt &lt;- index(norm.prc)
 plot(x = dt,
@@ -375,6 +385,102 @@ legend (&quot;topleft&quot;, c(&quot;BNI&quot;, &quot;WSKT&quot;,&quot;ANTM&quot
        lwd = c(2, 1, 1),
        col = c(&quot;black&quot;, &quot;blue&quot;, &quot;red&quot;))</code></pre>
 <p><img src="{{< blogdown/postref >}}index_files/figure-html/perbandingan_kinerja_secara_visual-1.png" width="672" /></p>
+</div>
+<div id="menghitung-capital-gain-saham-bni" class="section level4">
+<h4>Menghitung Capital Gain Saham BNI</h4>
+<pre class="r"><code>rets  &lt;-  data.bni$BNI.Close
+head(rets) # cek data</code></pre>
+<pre><code>##            BNI.Close
+## 2021-04-15      5975
+## 2021-04-16      5950
+## 2021-04-19      5875
+## 2021-04-20      5925
+## 2021-04-21      5775
+## 2021-04-22      5675</code></pre>
+<pre class="r"><code>tail(rets) # cek data</code></pre>
+<pre><code>##            BNI.Close
+## 2022-04-07      8300
+## 2022-04-08      8425
+## 2022-04-11      8400
+## 2022-04-12      8425
+## 2022-04-13      8450
+## 2022-04-14      8400</code></pre>
+<pre class="r"><code>names(rets)  &lt;-  &quot;price&quot;
+rets$lag.price &lt;- lag(rets$price, k = 1) # Create a Variable Equal to Lag of Closing Price
+head(rets) # cek data</code></pre>
+<pre><code>##            price lag.price
+## 2021-04-15  5975        NA
+## 2021-04-16  5950      5975
+## 2021-04-19  5875      5950
+## 2021-04-20  5925      5875
+## 2021-04-21  5775      5925
+## 2021-04-22  5675      5775</code></pre>
+<pre class="r"><code>tail(rets) # cek data</code></pre>
+<pre><code>##            price lag.price
+## 2022-04-07  8300      8150
+## 2022-04-08  8425      8300
+## 2022-04-11  8400      8425
+## 2022-04-12  8425      8400
+## 2022-04-13  8450      8425
+## 2022-04-14  8400      8450</code></pre>
+<pre class="r"><code>rets$price.ret  &lt;-  rets$price / rets$lag.price − 1 # Menghitung capital gain/price return
+head(rets) # cek data</code></pre>
+<pre><code>##            price lag.price    price.ret
+## 2021-04-15  5975        NA           NA
+## 2021-04-16  5950      5975 -0.004184100
+## 2021-04-19  5875      5950 -0.012605042
+## 2021-04-20  5925      5875  0.008510638
+## 2021-04-21  5775      5925 -0.025316456
+## 2021-04-22  5675      5775 -0.017316017</code></pre>
+<pre class="r"><code>tail(rets) # cek data</code></pre>
+<pre><code>##            price lag.price    price.ret
+## 2022-04-07  8300      8150  0.018404908
+## 2022-04-08  8425      8300  0.015060241
+## 2022-04-11  8400      8425 -0.002967359
+## 2022-04-12  8425      8400  0.002976190
+## 2022-04-13  8450      8425  0.002967359
+## 2022-04-14  8400      8450 -0.005917160</code></pre>
+<pre class="r"><code>rets &lt;- rets[−1, 3] # Clean Up Returns Data
+options(scipen = 999)
+head(rets) # cek data</code></pre>
+<pre><code>##               price.ret
+## 2021-04-16 -0.004184100
+## 2021-04-19 -0.012605042
+## 2021-04-20  0.008510638
+## 2021-04-21 -0.025316456
+## 2021-04-22 -0.017316017
+## 2021-04-23  0.017621145</code></pre>
+<pre class="r"><code>tail(rets) # cek data</code></pre>
+<pre><code>##               price.ret
+## 2022-04-07  0.018404908
+## 2022-04-08  0.015060241
+## 2022-04-11 -0.002967359
+## 2022-04-12  0.002976190
+## 2022-04-13  0.002967359
+## 2022-04-14 -0.005917160</code></pre>
+<pre class="r"><code>library(&#39;fBasics&#39;)
+basicStats(rets) # menghitung return ekspektasian, SD, dll</code></pre>
+<pre><code>##              price.ret
+## nobs        247.000000
+## NAs           0.000000
+## Minimum      -0.059048
+## Maximum       0.065421
+## 1. Quartile  -0.010695
+## 3. Quartile   0.013963
+## Mean          0.001566
+## Median        0.000000
+## Sum           0.386872
+## SE Mean       0.001234
+## LCL Mean     -0.000864
+## UCL Mean      0.003997
+## Variance      0.000376
+## Stdev         0.019392
+## Skewness      0.358968
+## Kurtosis      0.404076</code></pre>
+<ul>
+<li>Untuk menghitung total return BNI gunakan adjusted close price.</li>
+<li>Proses yang sama dapat dilakukan untuk saham Waskita dan Aneka Tambang.</li>
+</ul>
 <!-- AddToAny BEGIN -->
 <div class="a2a_kit a2a_kit_size_16 a2a_default_style"; data-a2a-url="https://bangtedy.github.io/porto" data-a2a-title="Return dan Risiko">
 <a class="a2a_button_facebook"></a>
@@ -384,5 +490,6 @@ legend (&quot;topleft&quot;, c(&quot;BNI&quot;, &quot;WSKT&quot;,&quot;ANTM&quot
 </div>
 <script async src="https://static.addtoany.com/menu/page.js"></script>
 <!-- AddToAny END -->
+</div>
 </div>
 </div>

@@ -235,57 +235,55 @@ D. DIVERSIFIKASI RISIKO PORTOFOLIO
 
 ### Ilustrasi Perbandingan Kinerja Saham Menggunakan R
 
-Dengan menggunakan komputer kita tidak perlu lagi menghitung secara manual return, risiko, SD, Var, Cov dll. Berikut sebagai ilustrasi bagaimana membandingkan kinerja beberapa saham dengan menggunakan software [R](https://www.r-project.org/). Saham yang akan dibandingkan adalah saham BNI, PT Waskita Karya, dan PT Aneka Tambang. 
+Dengan menggunakan komputer kita tidak perlu lagi menghitung secara manual return, risiko, SD, Var, Cov dll. Berikut sebagai ilustrasi bagaimana membandingkan kinerja beberapa saham dengan menggunakan software [R](https://www.r-project.org/). Data harga saham harian diunduh dari [Yahoo Finance](finance.yahoo.com). Saham yang akan dibandingkan adalah saham BNI, PT Waskita Karya, dan PT Aneka Tambang. 
 
 
 ```{r source_file, echo=FALSE}
 source("~/BLOG-SOURCES/2022.1-UT/porto/load.data.R", encoding = 'UTF-8') # dari Clifford Ang
 ```
 
+#### Mengimpor data saham BNI. Perhatikan ticker saham BNI!
 ```{r impor_bni}
-# Mengimpor data saham BNI dari finance.yahoo.com
 data.bni <- load.data("BBNI.JK.csv", "BNI")
 head(data.bni) # data dimulai dari 15 April 2021
 tail (data.bni) # data terakhir 14 April 2022
 names(data.bni) # melihat nama-nama variabel 
-plot(data.bni$BNI.Close) # plotting harga saham penutupan BNI
+plot(data.bni$BNI.Close) # plotting harga penutupan saham BNI
 summary(data.bni$BNI.Close)
 
 ```
 
+#### Kita lakukan hal yang sama untuk saham PT Waskita Karya
 ```{r impor_waskita}
-# Kita lakukan hal yang sama untuk saham PT Waskita Karya
+
 data.wskt <- load.data("WSKT.JK.csv", "WSKT")
 head(data.wskt) # data dimulai dari 15 April 2021
 tail (data.wskt) # data terakhir 14 April 2022
 names(data.wskt) # melihat nama-nama variabel 
-plot(data.wskt$WSKT.Close) # plotting harga saham penutupan WSKT
+plot(data.wskt$WSKT.Close) # plotting harga penutupan saham WSKT
 summary(data.wskt$WSKT.Close)
 
 ```
-
+#### Kita lakukan hal yang sama lagi untuk saham PT ANEKA Tambang, Tbk
 ```{r impor_antm}
-# Kita lakukan hal yang sama untuk saham PT ANEKA Tambang, Tbk
-
 data.antm <- load.data("ANTM.JK.csv", "ANTM")
 head(data.antm) # data dimulai dari 15 April 2021
 tail (data.antm) # data terakhir 14 April 2022
 names(data.antm) # melihat nama-nama variabel 
-plot(data.antm$ANTM.Close) # plotting harga saham penutupan WSKT
+plot(data.antm$ANTM.Close) # plotting harga penutupan saham WSKT
 summary(data.antm$ANTM.Close)
 
 ```
-
+#### Kita kombinasikan semua data harga penutupan menjadi satu
 ```{r menggabungkan_data}
-# Kita kombinasikan semua data harga penutupan menjadi satu
 close.prc <- cbind(data.bni$BNI.Close, data.wskt$WSKT.Close, data.antm$ANTM.Close)
 names(close.prc)  <-  c("BNI", "WSKT", "ANTM")
 head(close.prc) # cek data apakah sudah betul
 
 ```
+#### Selanjutnya kita normalkan data agar perbandingan kinerja saham lebih adil
 
 ```{r menormalkan-data}
-# Selanjutnya kita normalkan data agar perbandingan kinerja saham lebih adil
 (first.bni <- as.numeric(data.bni[1, 4]))
 (first.wskt <- as.numeric(data.wskt[1, 4]))
 (first.antm <- as.numeric(data.antm[1, 4]))
@@ -296,9 +294,9 @@ norm.prc$ANTM <- norm.prc$ANTM/first.antm
 head(norm.prc)
 
 ```
+#### Plot Apresiasi Kapital Masing-Masing Sekuritas
 
 ```{r perbandingan_kinerja_secara_visual}
-# Plot the Capital Appreciation of Each Security
 (y.range <- range(norm.prc))
 dt <- index(norm.prc)
 plot(x = dt,
@@ -315,6 +313,36 @@ legend ("topleft", c("BNI", "WSKT","ANTM"),
        lwd = c(2, 1, 1),
        col = c("black", "blue", "red"))
 ```
+
+#### Menghitung Capital Gain Saham BNI
+
+``` {r capital_gain_bni}
+rets  <-  data.bni$BNI.Close
+head(rets) # cek data
+tail(rets) # cek data
+
+names(rets)  <-  "price"
+rets$lag.price <- lag(rets$price, k = 1) # Create a Variable Equal to Lag of Closing Price
+head(rets) # cek data
+tail(rets) # cek data
+
+rets$price.ret  <-  rets$price / rets$lag.price − 1 # Menghitung capital gain/price return
+head(rets) # cek data
+tail(rets) # cek data
+
+rets <- rets[−1, 3] # Clean Up Returns Data
+options(scipen = 999)
+head(rets) # cek data
+tail(rets) # cek data
+
+```
+
+```{r fbasics_untuk_summary, message=FALSE}
+library('fBasics')
+basicStats(rets) # menghitung return ekspektasian, SD, dll
+```
+- Untuk menghitung total return BNI gunakan adjusted close price.
+- Proses yang sama dapat dilakukan untuk saham Waskita dan Aneka Tambang.
 
 
 <!-- AddToAny BEGIN -->
