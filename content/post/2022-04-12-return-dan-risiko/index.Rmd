@@ -235,8 +235,7 @@ D. DIVERSIFIKASI RISIKO PORTOFOLIO
 
 ### Ilustrasi Perbandingan Kinerja Saham Menggunakan R
 
-Dengan menggunakan komputer kita tidak perlu lagi menghitung secara manual return, risiko, SD, Var, Cov dll. Berikut sebagai ilustrasi bagaimana membandingkan kinerja beberapa saham dengan menggunakan software [R](https://www.r-project.org/). Data harga saham harian diunduh dari [Yahoo Finance](finance.yahoo.com). Saham yang akan dibandingkan adalah saham BNI, PT Waskita Karya, dan PT Aneka Tambang. 
-
+Dengan menggunakan komputer kita tidak perlu lagi menghitung secara manual return, risiko, SD, Var, Cov dll. Berikut sebagai ilustrasi bagaimana membandingkan kinerja beberapa saham dengan menggunakan software [R](https://www.r-project.org/). Data harga saham harian diunduh dari [Yahoo Finance](https://finance.yahoo.com). Saham yang akan dibandingkan adalah saham BNI, PT Waskita Karya, dan PT Aneka Tambang. 
 
 ```{r source_file, echo=FALSE}
 source("~/BLOG-SOURCES/2022.1-UT/porto/load.data.R", encoding = 'UTF-8') # dari Clifford Ang
