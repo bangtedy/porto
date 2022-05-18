@@ -1,0 +1,348 @@
+---
+title: Return dan Risiko
+description: |
+  Modul 3 EKSI4203
+author: 
+  - name: Tedy Herlambang
+    url: https://bangtedy.github.io
+    orcid_id: 0000-0002-7296-4357
+date: '2022-04-12'
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+```{r load_packages, echo=FALSE, message=FALSE, warning=FALSE}
+library('xts')
+```
+
+## Pendahuluan
+
+Modul ini membahas secara rinci dua faktor utama dalam mengambil keputusan investasi yaitu *return* dan risiko. Berbagai jenis return dan risk serta cara penghitungannya juga dibahas di modul ini.
+
+Setelah mempelajari dengan baik modul ini Anda diharapkan mampu menghitung return dan risiko untuk aset tunggal dan portofolio dan konsep diversifikasi. Secara khusus Anda diharapkan mampu:
+
+- [x] menjelaskan pengertian return suatu investasi,
+- [x] menjelaskan pengertian return aset tunggal,
+- [x] menjelaskan return realisasian,
+- [x] menjelaskan return ekspektasian,
+- [x] menjelaskan risiko aset tunggal,
+- [x] menjelaskan koefisien variasi,
+- [x] menjelaskan pengertian return portofolio,
+- [x] menjelaskan return portofolio ekspektasian,
+- [x] menjelaskan pengertian risiko portofolio,
+- [x] menjelaskan risiko portofolio dua aset,
+- [x] menjelaskan risiko portofolio banyak aset, dan
+- [x] menjelaskan pengertian diversifikasi risiko portofolio.
+
+
+
+## KEGIATAN BELAJAR 1
+
+### Return dan Risiko Aset Tunggal
+
+A. RETURN ASET TUNGGAL
+
+- Return: hasil yang diperoleh dari investasi
+  + return realisasian (*realised return)
+  + return ekspektasian
+- Return realisasian: untuk mengukur kinerja investasi
+  + return yang telah terjadi
+  + dihitung dengan data historis
+  + dasar untuk menghitung return ekspektasian dan risiko dimasa yad.
+-Return ekspektasian:
+  + belum terjadi tetapi diharapkan diperoleh di masa yad
+
+#### 1. Return Realisasian
+
+a. Return Total= capital gain (loss) + Yield
+
+  + capital gain: kenaikan atau penurunan nilai investasi $(P_t - P_{(t-1)})/P_{(t-1)}$
+  + Yield: income dari investasi
+
+$$R_t = \frac {P_t - P_{(t-1)}} {P_{(t-1)}} + \frac {I_t}{P_{(t-1)}} $$ 
+Catatan:
+
+  + $R_t$ = Return periode t dari aset
+  + $P_t$ = Harga periode t pada saat aset dijual
+  + $P_{t-1}$ = Harga periode t-1 pada saat aset dibeli
+  + $I_t$ = Income yang diperoleh dari pemanfaatan aset
+  + $\frac {P_t - P_{(t-1)}} {P_{(t-1)}}$ = capital gain atau loss
+  + $\frac {I_t}{P_{(t-1)}}$ = Yield
+
+b. Relatif Return
+
+Relatif return: hasil investasi $(P_t)$ relatif tehrdap nilai investasinya $(P_{t-1})$
+
+$$Relatif \,Return_t =  \frac {P_t}{P_{t-1}} $$
+Jika dividen diperhitungkan menjadi:
+
+$$Relatif \,Return_t =  \frac {P_t}{P_{t-1}} + \frac {D_t}{P_{t-1}} $$
+
+#### 2. Return Ekspektasian
+
+- dihitung dari rataan data historis (asumsi re sama dengan rataan data historis)
+  + rata-rata aritmetika
+  + rata-rata geometrik
+
+a. Rata-rata aritmetika E(R)
+
+\begin{align*}
+E(R_i) & = \frac {R_1 + R_2 + R_3 + ...+ R_n} {n}\\
+E(R_i) & = \frac {\sum_{x = 1}^{n} R_i}{n}
+\end{align*}
+
+Keterangan:
+
+  + E(Ri) = return ekspektasian saham i
+  + Ri = return historis saham i
+  + n = jumlah return historis
+
+b. Rata-rata Geometrik
+
+
+B. RISIKO ASET TUNGGAL
+
+- Risiko diartikan sebagai penyimpangan atau deviasi dari hasil yang diekspektasikan.
+- Menggunakan rumus deviasi standar (*standard deviation*)
+- Rumus deviasi standar:
+
+$$   
+SD = \sigma = \sqrt \frac {{{\sum_{x = 1}^{n} [R_t} - {E(R)}}]^2} {n-1}
+$$
+
+Keterangan:
+
+- SD = standard deviation
+- Rt = nilai return ekspektasi periode ke-t
+- E(R) = nilai ekspektasian (rata-rata return historis)
+- n = jumlah observasi data historis untuk n>30. Jika n<30 digunakan n-1.
+
+
+C. KOEFISIEN VARIASI
+
+- Di dalam investasi dua faktor ini harus diperhatikan secara terintegrasi: return ekspektasian dan risiko aset, yaitu dengan menggunakan koefisien variasi (*coefficient of variation*):
+
+$$CV_i = \frac {Risiko}{Return\,Ekspektasian}$$
+Keterangan:
+
+- Risiko: gunakan nilai SD
+- Return ekspektasian: rata-rata aritmetika return historis
+
+## KEGIATAN BELAJAR 2
+
+A. TUJUAN MEMBUAT PORTOFOLIO
+
+- We need to be more tactical and not put all our eggs in one political basket
+- Spread the risks and do not risk everything on the success of one venture.
+
+
+B. RETURN PORTOFOLIO
+
+**1. Portofolio berisi 2 Aset**
+
+**Return Realisasian**
+
+$$ Rp = w_1 . R_1 + w_2 . R_2 $$
+
+Keterangan:
+
+- Rp = return realisasian portofolio
+- w1 = proporsi aset ke 1 di portofolio
+- w2 = proporsi aset ke 2 di portofolio
+- R1 = return realisasian sekuritas ke 1
+- R2 = return realisasian sekuritas ke 2.
+
+**Return Ekspektasian**
+
+$$ E (Rp) = w_1.E(R_1) + w_2 . E(R_2)$$ 
+
+Keterangan:
+
+- E(Rp) = return ekspektasian portofolio
+- w1 = proporsi aset ke 1 di portofolio
+- w2 = proporsi aset ke 2 di portofolio
+- E(R1) = return ekspektasian sekuritas ke 1
+- E(R2) = return ekspektasian sekuritas ke 2.
+
+**2. Portofolio berisi banyak Aset**
+
+**RETURN REALISASIAN**
+
+$$ Rp = w_1 . R_1 + w_2 . R_2 + w_3 . R_3 +...+ w_n .R_n $$
+
+atau dapat dituliskan sebagai:
+
+$$ Rp = {\sum_{x = 1}^{n} {(w_i.R_i)}}$$
+
+Keterangan:
+
+- Rp = return realisasian portofolio
+- wi = proporsi aset ke i di portofolio
+- Ri = return realisasian aset ke-i
+- n = jumlah dari aset tunggal di dalam portofolio
+
+
+**RETURN EKSPEKTASIAN**
+
+\begin{align*}
+E(Rp) & = w_1 . E(R_1) + w_2 . E(R_2) + w_3 . E(R_3) +...+ w_n .E(R_n)\\
+E(Rp) & = {\sum_{x = 1}^{n} {(w_i.E(R_i)}}
+\end{align*}
+
+
+Keterangan:
+
+- E(Rp) = return ekspektasian portofolio
+- wi = proporsi aset ke i di portofolio
+- E(Ri) = return ekspektasian aset ke-i
+- n = jumlah dari aset tunggal di dalam portofolio
+
+
+C. RISIKO PORTOFOLIO
+
+- Risiko portofolio tidak sama dengan rata-rata tertimbang dari risiko masing-masing aset, tetapi bisa lebih kecil.
+- Dua elemen risiko portofolio:
+  + komponen varian return sekuritas
+  + komponen kovarian return sekuritas
+- Risiko portofolio dua aset:
+
+$$\sigma_p^2 = w_1^2 \sigma_1^2+ w_2^2 \sigma_2^2+ w_1w_2 \sigma_{12}+w_2w_1 \sigma_{21}$$
+karena $\sigma_{12}$ simetris dengan $\sigma_{21}$ yang nilainya sama, maka rumus menjadi:
+
+$$ \sigma_p^2 = w_1^2 \sigma_1^2+ w_2^2 \sigma_2^2+ 2 w_1w_2 \sigma _{12}$$
+Rumus ini dapat dikembangkan untuk portofolio dengan n-aset:
+
+$$ \sigma_p^2 = [w_1^2 \sigma_1^2+ w_2^2 \sigma_2^2 + ...+ w_n^2 \sigma_n^2 ]+ [2 w_1w_2 \sigma _{12} + 2 w_1w_3 \sigma _{13}...+ 2 w_{n-1}w_n \sigma _{{n-1},n}]$$
+Dua komponen Risiko Portofolio
+
+**Varian**: semua varian dari aset-aset di dalam portofolio
+
+$$ VAR = \sigma^2 = SD^2 = \frac {\sum_{n=1}^{n} [R_t -E(R)]^2} {n-1} $$
+**Kovarian**: arah pergerakan dua buah variabel
+
+$$ Cov (R_A,R_B) = \sigma_{A,B} = \frac {{\sum_{n=1}^{n} [R_{A,t} - E(R_A)] [R_{B,t} -E(R_B)]}} {n-1} $$
+
+D. DIVERSIFIKASI RISIKO PORTOFOLIO
+
+- Risiko portofolio dapat turun karena *comovement* antara dua aset.
+- Risiko akan semakin turun jika nilai kovarian negatif.
+- Risiko portofolio akan semakin terdiversifikasi jika jumlah *comovement* semakin banyak.
+- Dua jenis risiko:
+  + risiko perusahaan --> dapat didiversifikasi/non sistematik
+  + risiko spesifik/unik/sistematik -->non diversifiable/market risk
+
+### Ilustrasi Perbandingan Kinerja Saham Menggunakan R
+
+Dengan menggunakan komputer kita tidak perlu lagi menghitung secara manual return, risiko, SD, Var, Cov dll. Berikut sebagai ilustrasi bagaimana membandingkan kinerja beberapa saham dengan menggunakan software [R](https://www.r-project.org/). Data harga saham harian diunduh dari [Yahoo Finance](https://finance.yahoo.com). Saham yang akan dibandingkan adalah saham BNI, PT Waskita Karya, dan PT Aneka Tambang. 
+
+```{r source_file, echo=FALSE}
+source("~/BLOG-SOURCES/2022.1-UT/porto/_posts/2022-04-12-return-dan-risiko/load.data.R", encoding = 'UTF-8') # dari Clifford Ang
+```
+
+#### Mengimpor data saham BNI. Perhatikan ticker saham BNI!
+```{r impor_bni}
+data.bni <- load.data("BBNI.JK.csv", "BNI")
+head(data.bni) # data dimulai dari 15 April 2021
+tail (data.bni) # data terakhir 14 April 2022
+names(data.bni) # melihat nama-nama variabel 
+plot(data.bni$BNI.Close) # plotting harga penutupan saham BNI
+summary(data.bni$BNI.Close)
+
+```
+
+#### Kita lakukan hal yang sama untuk saham PT Waskita Karya
+```{r impor_waskita}
+
+data.wskt <- load.data("WSKT.JK.csv", "WSKT")
+head(data.wskt) # data dimulai dari 15 April 2021
+tail (data.wskt) # data terakhir 14 April 2022
+names(data.wskt) # melihat nama-nama variabel 
+plot(data.wskt$WSKT.Close) # plotting harga penutupan saham WSKT
+summary(data.wskt$WSKT.Close)
+
+```
+#### Kita lakukan hal yang sama lagi untuk saham PT ANEKA Tambang, Tbk
+```{r impor_antm}
+data.antm <- load.data("ANTM.JK.csv", "ANTM")
+head(data.antm) # data dimulai dari 15 April 2021
+tail (data.antm) # data terakhir 14 April 2022
+names(data.antm) # melihat nama-nama variabel 
+plot(data.antm$ANTM.Close) # plotting harga penutupan saham WSKT
+summary(data.antm$ANTM.Close)
+
+```
+#### Kita kombinasikan semua data harga penutupan menjadi satu
+```{r menggabungkan_data}
+close.prc <- cbind(data.bni$BNI.Close, data.wskt$WSKT.Close, data.antm$ANTM.Close)
+names(close.prc)  <-  c("BNI", "WSKT", "ANTM")
+head(close.prc) # cek data apakah sudah betul
+
+```
+#### Selanjutnya kita normalkan data agar perbandingan kinerja saham lebih adil
+
+```{r menormalkan-data}
+(first.bni <- as.numeric(data.bni[1, 4]))
+(first.wskt <- as.numeric(data.wskt[1, 4]))
+(first.antm <- as.numeric(data.antm[1, 4]))
+norm.prc <- close.prc
+norm.prc$BNI <- norm.prc$BNI/first.bni
+norm.prc$WSKT <- norm.prc$WSKT/first.wskt
+norm.prc$ANTM <- norm.prc$ANTM/first.antm
+head(norm.prc)
+
+```
+#### Plot Apresiasi Kapital Masing-Masing Sekuritas
+
+```{r perbandingan_kinerja_secara_visual}
+(y.range <- range(norm.prc))
+dt <- index(norm.prc)
+plot(x = dt,
+     y = norm.prc$BNI,
+     xlab = "Tanggal",
+     ylab = "Nilai Investasi",
+     ylim = y.range,
+     type = "l",
+     lwd = 2,
+     main = "Nilai Investasi Rp 1 pada BNI, WSKT and ANTM")
+lines(x = dt, y = norm.prc$WSKT, col = "blue")
+lines(x = dt, y = norm.prc$ANTM, col = "red")
+abline(h = 1, lty = 2)
+legend ("topleft", c("BNI", "WSKT","ANTM"),
+       lwd = c(2, 1, 1),
+       col = c("black", "blue", "red"))
+```
+
+#### Menghitung Capital Gain Saham BNI
+
+``` {r capital_gain_bni}
+rets  <-  data.bni$BNI.Close
+head(rets) # cek data
+tail(rets) # cek data
+
+names(rets)  <-  "price"
+rets$lag.price <- lag(rets$price, k = 1) # Create a Variable Equal to Lag of Closing Price
+head(rets) # cek data
+tail(rets) # cek data
+
+rets$price.ret  <-  rets$price / rets$lag.price − 1 # Menghitung capital gain/price return
+head(rets) # cek data
+tail(rets) # cek data
+
+rets <- rets[−1, 3] # Clean Up Returns Data
+options(scipen = 999)
+head(rets) # cek data
+tail(rets) # cek data
+
+```
+
+```{r fbasics_untuk_summary, message=FALSE}
+library('fBasics')
+basicStats(rets) # menghitung return ekspektasian, SD, dll
+```
+- Untuk menghitung total return BNI gunakan adjusted close price.
+- Proses yang sama dapat dilakukan untuk saham Waskita dan Aneka Tambang.

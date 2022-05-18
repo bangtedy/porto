@@ -1,0 +1,62 @@
+---
+title: Konsep Portofolio
+description: |
+  Modul 6 EKSI4203
+author: 
+  - name: Tedy Herlambang
+    url: https://bangtedy.github.io
+    orcid_id: 0000-0002-7296-4357
+date: '2022-05-17'
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## PENDAHULUAN
+
+Modul ini membahas mengenai konsep dan penerapan portofolio. Topik-topik yang dibahas antara lain *attainable set*, *efficient set*, *efficient portfolio*. Konsep portofolio optimal yang dibahas antara lain prinsip Markowitz, prinsip optimal sudut terbesar dan risiko portofolio terkecil.
+
+Sesudah mempelajari dengan baik modul ini Anda diharapkan mampu menerapkan konsep portofolio optimal. Lebih khusus lagi, mahasiswa diharapkan mampu:
+
+- [x] menjelaskan konsep portofolio; 
+- [x] menjelaskan pengertian attainable set;
+- [x] menjelaskan pengertian dan menentukan set efisien;
+- [x] menentukan portofolio optimal sesuai dengan preferensi risiko;
+- [x] menentukan portofolio optimal sudut terbesar;
+- [x] menentukan portofolio optimal risiko terkecil.
+
+<br />
+
+
+## KEGIATAN BELAJAR 1: *ATTAINABEL SET* DAN *EFFICIENT SET*
+
+### A. *Attainable Set*
+
+- Kemungkinan proporsi aset di dalam sebuah portofolio sangat banyak
+- Dua faktor yang perlu diperhatikan: return ekspektasian dan risiko portofolio.
+- Menggambarkan attainable set: return ekspektasian di sumbu y dan risiko portofolio di sumbu x.
+
+### B. Menentukan Set Efisien
+
+- Berisi portofolio-portofolio baik/efisien
+- Salah satu daru portofolio efisien adalah portofolio optimal/terbaik.
+
+### C. Portofolio-Portofolio Efisien
+
+- Portofolio yang memberikan return ekspektasian terbesar dengan risiko tertentu, atau
+- Portofolio yang memberikan risiko yang terkecil dengan return tertentu.
+
+<br />
+
+## KEGIATAN BELAJAR 2: MEMILIH PORTOFOLIO OPTIMAL
+
+### A. Portofolio Optimal sesuai dengan Prinsip Markowitz
+
+
+### B. Portofolio Optimal Sudut Terbesar
+
+### C. Portofolio Risiko Terkecil

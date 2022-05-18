@@ -1,74 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>Posts on Teori Portofolio dan Analisis Investasi</title>
-    <link>https://bangtedy.github.io/porto/post/</link>
-    <description>Recent content in Posts on Teori Portofolio dan Analisis Investasi</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 17 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bangtedy.github.io/porto/post/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Konsep Portofolio</title>
-      <link>https://bangtedy.github.io/porto/post/2022/05/17/konsep-portofolio/</link>
-      <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://bangtedy.github.io/porto/post/2022/05/17/konsep-portofolio/</guid>
-      <description>PENDAHULUANModul ini membahas mengenai konsep dan penerapan portofolio. Topik-topik yang dibahas antara lain attainable set, efficient set, efficient portfolio. Konsep portofolio optimal yang dibahas antara lain prinsip Markowitz, prinsip optimal sudut terbesar dan risiko portofolio terkecil.
-Sesudah mempelajari dengan baik modul ini Anda diharapkan mampu menerapkan konsep portofolio optimal. Lebih khusus lagi, mahasiswa diharapkan mampu:
-✅ menjelaskan konsep portofolio;✅ menjelaskan pengertian attainable set;✅ menjelaskan pengertian dan menentukan set efisien;✅ menentukan portofolio optimal sesuai dengan preferensi risiko;✅ menentukan portofolio optimal sudut terbesar;✅ menentukan portofolio optimal risiko terkecil.</description>
-    </item>
-    
-    <item>
-      <title>Instrumen Pendapatan Tetap</title>
-      <link>https://bangtedy.github.io/porto/post/2022/05/14/instrumen-pendapatan-tetap/</link>
-      <pubDate>Sat, 14 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://bangtedy.github.io/porto/post/2022/05/14/instrumen-pendapatan-tetap/</guid>
-      <description>Tujuan PembelajaranModul ini membahas instrumen pendapatan tetap yaitu obligasi. Setelah mempelajari modul ini, mahasiswa diharapkan mampu menghitung nilai obligasi dan hasil obligasi. Lebih khusus, mahasiswa diharapkan mampu:
-menjelaskan pengertian instrumen pendapatan tetap;menjelaskan macam-macam obligasi,menjelaskan pengertian kode obligasi,menjelaskan pengertian nilai instrinsik obligasi,menghitung nilai instrinsik obligasi membayar kupon,menghitung nilai instrinsik obligasi tidak membayar kuponmenghitung hasil sekarang obligasi,menghitung hasil sampai jatuh tempo,menghitung hasil sampai ditebus,menghitung nilai pasar obligasi.</description>
-    </item>
-    
-    <item>
-      <title>Saham</title>
-      <link>https://bangtedy.github.io/porto/post/2022/04/22/saham/</link>
-      <pubDate>Fri, 22 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://bangtedy.github.io/porto/post/2022/04/22/saham/</guid>
-      <description>PENDAHULUANModul ini membahas seluk beluk saham. Setelah mempelajari modul ini, mahasiswa diharapkan mampu menghitung nilai saham baik saham biasa ataupun saham preferen. Lebih khusus, mahasiswa diharapkan mampu:
-menjelaskan konsep sahammenjelaskan pengertian nilai bukumenjelaskan pengertian nilai intrinsikmenghitung metode nilai sekarang aliran kas masa datangmenghitung model diskonto dividenmenghitung nilai intrinsik pendekatan relatifmenjelaskan pengertian nilai pasar saham.📚 KEGIATAN BELAJAR 1: PEMAHAMAN SAHAMA.</description>
-    </item>
-    
-    <item>
-      <title>Return dan Risiko</title>
-      <link>https://bangtedy.github.io/porto/post/2022/04/12/return-dan-risiko/</link>
-      <pubDate>Tue, 12 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://bangtedy.github.io/porto/post/2022/04/12/return-dan-risiko/</guid>
-      <description>PendahuluanModul ini membahas secara rinci dua faktor utama dalam mengambil keputusan investasi yaitu return dan risiko. Berbagai jenis return dan risk serta cara penghitungannya juga dibahas di modul ini.
-Setelah mempelajari dengan baik modul ini Anda diharapkan mampu menghitung return dan risiko untuk aset tunggal dan portofolio dan konsep diversifikasi. Secara khusus Anda diharapkan mampu:
-menjelaskan pengertian return suatu investasi,menjelaskan pengertian return aset tunggal,menjelaskan return realisasian,menjelaskan return ekspektasian,menjelaskan risiko aset tunggal,menjelaskan koefisien variasi,menjelaskan pengertian return portofolio,menjelaskan return portofolio ekspektasian,menjelaskan pengertian risiko portofolio,menjelaskan risiko portofolio dua aset,menjelaskan risiko portofolio banyak aset, danmenjelaskan pengertian diversifikasi risiko portofolio.</description>
-    </item>
-    
-    <item>
-      <title>Pasar Modal</title>
-      <link>https://bangtedy.github.io/porto/post/2022/04/08/pasar-modal/</link>
-      <pubDate>Fri, 08 Apr 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://bangtedy.github.io/porto/post/2022/04/08/pasar-modal/</guid>
-      <description>Capaian PembelajaranSetelah mempelajari dengan baik modul ini mahasiswa diharapkan mampu menjelaskan macam-macam pasar modal, bagaimana cara kerja, perkembangan dan kinerjanya. Secara khusus mahasiswa diharapkan mampu menjelaskan tentang:
-pasar modalpengertian dan proses pasar primer,pengertian dan proses pasar sekunder,perbedaan antara pasar OTC dan stock exchange,cara transaksi kas dan secara margin di pasar modal,pengertian dan proses short sale,pasar modal Indonesia dan strukturnya,fenomena underpricing di pasar modal Indonesia dan kinerjanya,macam-macam indeks di pasar modal Indonesia,IHSG sebagai pengukur kinerja pasar modal.</description>
-    </item>
-    
-    <item>
-      <title>Pengantar ke TPAI</title>
-      <link>https://bangtedy.github.io/porto/post/2022/03/31/pengantar-ke-tpai/</link>
-      <pubDate>Thu, 31 Mar 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://bangtedy.github.io/porto/post/2022/03/31/pengantar-ke-tpai/</guid>
-      <description>Capaian PembelajaranSetelah mempelajari modul ini, Anda seharusnya dapat:
-Menjelaskan apa itu investasiMenjelaskan alasan orang berinvestasiMenjelaskan bagaimana investor mengukur return dari investasi (the rate of return on an investment)Menjelaskan bagaimana investor mengukur risiko dari berbagai pilihan investasiMenjelaskan pengertian dan instrumen pasar modal di IndonesiaAPAKAH INVESTASI ITU?Sepanjang hidup, Anda akan memperoleh dan mengeluarkan uang (earning and spending money).
-Jarang, bahwa pendapatan/uang Anda saat ini akan sama dengan keinginan belanja Anda.</description>
-    </item>
-    
-  </channel>
-</rss>

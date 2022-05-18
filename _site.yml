@@ -1,0 +1,26 @@
+name: "pt"
+title: "Teori Portofolio dan Analisis Investasi"
+description: |
+  EKSI4203
+author:
+  - first_name: "Tedy"
+    last_name: "Herlambang"
+    url: https://github.com/bangtedy
+    affiliation: 
+    orcid_id: 0000-0002-7296-4357
+base_url: https://bangtedy.github.io/porto
+output_dir: "docs"
+collections:
+  posts:
+    share: [twitter, facebook, linkedin]
+theme: theme.css
+twitter:
+  site: "@t_hlb"
+repository_url: https://github.com/bangtedy/porto
+navbar:
+  right:
+    - text: "Sekilas"
+      href: about.html
+    - text: "Materi"
+      href: index.html
+output: distill::distill_article

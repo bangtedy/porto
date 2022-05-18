@@ -1,22 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>attainable set on Teori Portofolio dan Analisis Investasi</title>
-    <link>https://bangtedy.github.io/porto/tags/attainable-set/</link>
-    <description>Recent content in attainable set on Teori Portofolio dan Analisis Investasi</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <lastBuildDate>Tue, 17 May 2022 00:00:00 +0000</lastBuildDate><atom:link href="https://bangtedy.github.io/porto/tags/attainable-set/index.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>Konsep Portofolio</title>
-      <link>https://bangtedy.github.io/porto/post/2022/05/17/konsep-portofolio/</link>
-      <pubDate>Tue, 17 May 2022 00:00:00 +0000</pubDate>
-      
-      <guid>https://bangtedy.github.io/porto/post/2022/05/17/konsep-portofolio/</guid>
-      <description>PENDAHULUANModul ini membahas mengenai konsep dan penerapan portofolio. Topik-topik yang dibahas antara lain attainable set, efficient set, efficient portfolio. Konsep portofolio optimal yang dibahas antara lain prinsip Markowitz, prinsip optimal sudut terbesar dan risiko portofolio terkecil.
-Sesudah mempelajari dengan baik modul ini Anda diharapkan mampu menerapkan konsep portofolio optimal. Lebih khusus lagi, mahasiswa diharapkan mampu:
-✅ menjelaskan konsep portofolio;✅ menjelaskan pengertian attainable set;✅ menjelaskan pengertian dan menentukan set efisien;✅ menentukan portofolio optimal sesuai dengan preferensi risiko;✅ menentukan portofolio optimal sudut terbesar;✅ menentukan portofolio optimal risiko terkecil.</description>
-    </item>
-    
-  </channel>
-</rss>

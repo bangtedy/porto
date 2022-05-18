@@ -1,0 +1,2050 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+  <title>Return dan Risiko</title>
+
+  <meta property="description" itemprop="description" content="Modul 3 EKSI4203"/>
+
+
+  <!--  https://schema.org/Article -->
+  <meta property="article:published" itemprop="datePublished" content="2022-04-12"/>
+  <meta property="article:created" itemprop="dateCreated" content="2022-04-12"/>
+  <meta name="article:author" content="Tedy Herlambang"/>
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="Return dan Risiko"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="Modul 3 EKSI4203"/>
+  <meta property="og:locale" content="en_US"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="Return dan Risiko"/>
+  <meta property="twitter:description" content="Modul 3 EKSI4203"/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","date","output"]}},"value":[{"type":"character","attributes":{},"value":["Return dan Risiko"]},{"type":"character","attributes":{},"value":["Modul 3 EKSI4203\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","orcid_id"]}},"value":[{"type":"character","attributes":{},"value":["Tedy Herlambang"]},{"type":"character","attributes":{},"value":["https://bangtedy.github.io"]},{"type":"character","attributes":{},"value":["0000-0002-7296-4357"]}]}]},{"type":"character","attributes":{},"value":["2022-04-12"]},{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["distill::distill_article"]}},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["self_contained"]}},"value":[{"type":"logical","attributes":{},"value":[false]}]}]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  
+  <script type="text/json" id="radix-resource-manifest">
+  {"type":"character","attributes":{},"value":["ANTM.JK.csv","BBNI.JK.csv","BBRI.JK.csv","BMRI.JK.csv","PGAS.JK.csv","return-dan-risiko_files/anchor-4.2.2/anchor.min.js","return-dan-risiko_files/bowser-1.9.3/bowser.min.js","return-dan-risiko_files/distill-2.2.21/template.v2.js","return-dan-risiko_files/figure-html5/impor_antm-1.png","return-dan-risiko_files/figure-html5/impor_bni-1.png","return-dan-risiko_files/figure-html5/impor_waskita-1.png","return-dan-risiko_files/figure-html5/perbandingan_kinerja_secara_visual-1.png","return-dan-risiko_files/header-attrs-2.14/header-attrs.js","return-dan-risiko_files/jquery-3.6.0/jquery-3.6.0.js","return-dan-risiko_files/jquery-3.6.0/jquery-3.6.0.min.js","return-dan-risiko_files/jquery-3.6.0/jquery-3.6.0.min.map","return-dan-risiko_files/popper-2.6.0/popper.min.js","return-dan-risiko_files/tippy-6.2.7/tippy-bundle.umd.min.js","return-dan-risiko_files/tippy-6.2.7/tippy-light-border.css","return-dan-risiko_files/tippy-6.2.7/tippy.css","return-dan-risiko_files/tippy-6.2.7/tippy.umd.min.js","return-dan-risiko_files/webcomponents-2.0.0/webcomponents.js","TLKM.JK.csv","WSKT.JK.csv"]}
+  </script>
+  <!--radix_placeholder_navigation_in_header-->
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme
+    $('code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        if ($(this).children()[0].nodeName == "D-FOOTNOTE") {
+          var fn = $(this).children()[0]
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          return "<p>" + $('#ref-' + ref).html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="return-dan-risiko_files/header-attrs-2.14/header-attrs.js"></script>
+  <script src="return-dan-risiko_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <script src="return-dan-risiko_files/popper-2.6.0/popper.min.js"></script>
+  <link href="return-dan-risiko_files/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="return-dan-risiko_files/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="return-dan-risiko_files/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="return-dan-risiko_files/anchor-4.2.2/anchor.min.js"></script>
+  <script src="return-dan-risiko_files/bowser-1.9.3/bowser.min.js"></script>
+  <script src="return-dan-risiko_files/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="return-dan-risiko_files/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Return dan Risiko","description":"Modul 3 EKSI4203","authors":[{"author":"Tedy Herlambang","authorURL":"https://bangtedy.github.io","affiliation":"&nbsp;","affiliationURL":"#","orcidID":"0000-0002-7296-4357"}],"publishedDate":"2022-04-12T00:00:00.000+07:00","citationText":"Herlambang, 2022"}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Return dan Risiko</h1>
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>Modul 3 EKSI4203</p></p>
+</div>
+
+<div class="d-byline">
+  Tedy Herlambang <a href="https://bangtedy.github.io"
+class="uri">https://bangtedy.github.io</a> 
+  
+<br/>2022-04-12
+</div>
+
+<div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h2 id="pendahuluan">Pendahuluan</h2>
+<p>Modul ini membahas secara rinci dua faktor utama dalam mengambil
+keputusan investasi yaitu <em>return</em> dan risiko. Berbagai jenis
+return dan risk serta cara penghitungannya juga dibahas di modul
+ini.</p>
+<p>Setelah mempelajari dengan baik modul ini Anda diharapkan mampu
+menghitung return dan risiko untuk aset tunggal dan portofolio dan
+konsep diversifikasi. Secara khusus Anda diharapkan mampu:</p>
+<ul class="task-list">
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan pengertian return suatu investasi,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan pengertian return aset tunggal,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan return realisasian,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan return ekspektasian,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan risiko aset tunggal,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan koefisien variasi,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan pengertian return portofolio,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan return portofolio ekspektasian,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan pengertian risiko portofolio,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan risiko portofolio dua aset,</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan risiko portofolio banyak aset, dan</li>
+<li><input type="checkbox" disabled="" checked="" />
+menjelaskan pengertian diversifikasi risiko portofolio.</li>
+</ul>
+<h2 id="kegiatan-belajar-1">KEGIATAN BELAJAR 1</h2>
+<h3 id="return-dan-risiko-aset-tunggal">Return dan Risiko Aset
+Tunggal</h3>
+<p>A. RETURN ASET TUNGGAL</p>
+<ul>
+<li>Return: hasil yang diperoleh dari investasi
+<ul>
+<li>return realisasian (*realised return)</li>
+<li>return ekspektasian</li>
+</ul></li>
+<li>Return realisasian: untuk mengukur kinerja investasi
+<ul>
+<li>return yang telah terjadi</li>
+<li>dihitung dengan data historis</li>
+<li>dasar untuk menghitung return ekspektasian dan risiko dimasa yad.
+-Return ekspektasian:</li>
+<li>belum terjadi tetapi diharapkan diperoleh di masa yad</li>
+</ul></li>
+</ul>
+<h4 id="return-realisasian">1. Return Realisasian</h4>
+<ol type="a">
+<li>Return Total= capital gain (loss) + Yield</li>
+</ol>
+<ul>
+<li>capital gain: kenaikan atau penurunan nilai investasi <span
+class="math inline">\((P_t - P_{(t-1)})/P_{(t-1)}\)</span></li>
+<li>Yield: income dari investasi</li>
+</ul>
+<p><span class="math display">\[R_t = \frac {P_t - P_{(t-1)}}
+{P_{(t-1)}} + \frac {I_t}{P_{(t-1)}} \]</span> Catatan:</p>
+<ul>
+<li><span class="math inline">\(R_t\)</span> = Return periode t dari
+aset</li>
+<li><span class="math inline">\(P_t\)</span> = Harga periode t pada saat
+aset dijual</li>
+<li><span class="math inline">\(P_{t-1}\)</span> = Harga periode t-1
+pada saat aset dibeli</li>
+<li><span class="math inline">\(I_t\)</span> = Income yang diperoleh
+dari pemanfaatan aset</li>
+<li><span class="math inline">\(\frac {P_t - P_{(t-1)}}
+{P_{(t-1)}}\)</span> = capital gain atau loss</li>
+<li><span class="math inline">\(\frac {I_t}{P_{(t-1)}}\)</span> =
+Yield</li>
+</ul>
+<ol start="2" type="a">
+<li>Relatif Return</li>
+</ol>
+<p>Relatif return: hasil investasi <span
+class="math inline">\((P_t)\)</span> relatif tehrdap nilai investasinya
+<span class="math inline">\((P_{t-1})\)</span></p>
+<p><span class="math display">\[Relatif \,Return_t =  \frac
+{P_t}{P_{t-1}} \]</span> Jika dividen diperhitungkan menjadi:</p>
+<p><span class="math display">\[Relatif \,Return_t =  \frac
+{P_t}{P_{t-1}} + \frac {D_t}{P_{t-1}} \]</span></p>
+<h4 id="return-ekspektasian">2. Return Ekspektasian</h4>
+<ul>
+<li>dihitung dari rataan data historis (asumsi re sama dengan rataan
+data historis)
+<ul>
+<li>rata-rata aritmetika</li>
+<li>rata-rata geometrik</li>
+</ul></li>
+</ul>
+<ol type="a">
+<li>Rata-rata aritmetika E(R)</li>
+</ol>
+<p><span class="math display">\[\begin{align*}
+E(R_i) &amp; = \frac {R_1 + R_2 + R_3 + ...+ R_n} {n}\\
+E(R_i) &amp; = \frac {\sum_{x = 1}^{n} R_i}{n}
+\end{align*}\]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>E(Ri) = return ekspektasian saham i</li>
+<li>Ri = return historis saham i</li>
+<li>n = jumlah return historis</li>
+</ul>
+<ol start="2" type="a">
+<li>Rata-rata Geometrik</li>
+</ol>
+<p>B. RISIKO ASET TUNGGAL</p>
+<ul>
+<li>Risiko diartikan sebagai penyimpangan atau deviasi dari hasil yang
+diekspektasikan.</li>
+<li>Menggunakan rumus deviasi standar (<em>standard deviation</em>)</li>
+<li>Rumus deviasi standar:</li>
+</ul>
+<p><span class="math display">\[   
+SD = \sigma = \sqrt \frac {{{\sum_{x = 1}^{n} [R_t} - {E(R)}}]^2} {n-1}
+\]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>SD = standard deviation</li>
+<li>Rt = nilai return ekspektasi periode ke-t</li>
+<li>E(R) = nilai ekspektasian (rata-rata return historis)</li>
+<li>n = jumlah observasi data historis untuk n&gt;30. Jika n&lt;30
+digunakan n-1.</li>
+</ul>
+<p>C. KOEFISIEN VARIASI</p>
+<ul>
+<li>Di dalam investasi dua faktor ini harus diperhatikan secara
+terintegrasi: return ekspektasian dan risiko aset, yaitu dengan
+menggunakan koefisien variasi (<em>coefficient of variation</em>):</li>
+</ul>
+<p><span class="math display">\[CV_i = \frac
+{Risiko}{Return\,Ekspektasian}\]</span> Keterangan:</p>
+<ul>
+<li>Risiko: gunakan nilai SD</li>
+<li>Return ekspektasian: rata-rata aritmetika return historis</li>
+</ul>
+<h2 id="kegiatan-belajar-2">KEGIATAN BELAJAR 2</h2>
+<p>A. TUJUAN MEMBUAT PORTOFOLIO</p>
+<ul>
+<li>We need to be more tactical and not put all our eggs in one
+political basket</li>
+<li>Spread the risks and do not risk everything on the success of one
+venture.</li>
+</ul>
+<p>B. RETURN PORTOFOLIO</p>
+<p><strong>1. Portofolio berisi 2 Aset</strong></p>
+<p><strong>Return Realisasian</strong></p>
+<p><span class="math display">\[ Rp = w_1 . R_1 + w_2 . R_2
+\]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>Rp = return realisasian portofolio</li>
+<li>w1 = proporsi aset ke 1 di portofolio</li>
+<li>w2 = proporsi aset ke 2 di portofolio</li>
+<li>R1 = return realisasian sekuritas ke 1</li>
+<li>R2 = return realisasian sekuritas ke 2.</li>
+</ul>
+<p><strong>Return Ekspektasian</strong></p>
+<p><span class="math display">\[ E (Rp) = w_1.E(R_1) + w_2 .
+E(R_2)\]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>E(Rp) = return ekspektasian portofolio</li>
+<li>w1 = proporsi aset ke 1 di portofolio</li>
+<li>w2 = proporsi aset ke 2 di portofolio</li>
+<li>E(R1) = return ekspektasian sekuritas ke 1</li>
+<li>E(R2) = return ekspektasian sekuritas ke 2.</li>
+</ul>
+<p><strong>2. Portofolio berisi banyak Aset</strong></p>
+<p><strong>RETURN REALISASIAN</strong></p>
+<p><span class="math display">\[ Rp = w_1 . R_1 + w_2 . R_2 + w_3 . R_3
++...+ w_n .R_n \]</span></p>
+<p>atau dapat dituliskan sebagai:</p>
+<p><span class="math display">\[ Rp = {\sum_{x = 1}^{n}
+{(w_i.R_i)}}\]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>Rp = return realisasian portofolio</li>
+<li>wi = proporsi aset ke i di portofolio</li>
+<li>Ri = return realisasian aset ke-i</li>
+<li>n = jumlah dari aset tunggal di dalam portofolio</li>
+</ul>
+<p><strong>RETURN EKSPEKTASIAN</strong></p>
+<p><span class="math display">\[\begin{align*}
+E(Rp) &amp; = w_1 . E(R_1) + w_2 . E(R_2) + w_3 . E(R_3) +...+ w_n
+.E(R_n)\\
+E(Rp) &amp; = {\sum_{x = 1}^{n} {(w_i.E(R_i)}}
+\end{align*}\]</span></p>
+<p>Keterangan:</p>
+<ul>
+<li>E(Rp) = return ekspektasian portofolio</li>
+<li>wi = proporsi aset ke i di portofolio</li>
+<li>E(Ri) = return ekspektasian aset ke-i</li>
+<li>n = jumlah dari aset tunggal di dalam portofolio</li>
+</ul>
+<p>C. RISIKO PORTOFOLIO</p>
+<ul>
+<li>Risiko portofolio tidak sama dengan rata-rata tertimbang dari risiko
+masing-masing aset, tetapi bisa lebih kecil.</li>
+<li>Dua elemen risiko portofolio:
+<ul>
+<li>komponen varian return sekuritas</li>
+<li>komponen kovarian return sekuritas</li>
+</ul></li>
+<li>Risiko portofolio dua aset:</li>
+</ul>
+<p><span class="math display">\[\sigma_p^2 = w_1^2 \sigma_1^2+ w_2^2
+\sigma_2^2+ w_1w_2 \sigma_{12}+w_2w_1 \sigma_{21}\]</span> karena <span
+class="math inline">\(\sigma_{12}\)</span> simetris dengan <span
+class="math inline">\(\sigma_{21}\)</span> yang nilainya sama, maka
+rumus menjadi:</p>
+<p><span class="math display">\[ \sigma_p^2 = w_1^2 \sigma_1^2+ w_2^2
+\sigma_2^2+ 2 w_1w_2 \sigma _{12}\]</span> Rumus ini dapat dikembangkan
+untuk portofolio dengan n-aset:</p>
+<p><span class="math display">\[ \sigma_p^2 = [w_1^2 \sigma_1^2+ w_2^2
+\sigma_2^2 + ...+ w_n^2 \sigma_n^2 ]+ [2 w_1w_2 \sigma _{12} + 2 w_1w_3
+\sigma _{13}...+ 2 w_{n-1}w_n \sigma _{{n-1},n}]\]</span> Dua komponen
+Risiko Portofolio</p>
+<p><strong>Varian</strong>: semua varian dari aset-aset di dalam
+portofolio</p>
+<p><span class="math display">\[ VAR = \sigma^2 = SD^2 = \frac
+{\sum_{n=1}^{n} [R_t -E(R)]^2} {n-1} \]</span>
+<strong>Kovarian</strong>: arah pergerakan dua buah variabel</p>
+<p><span class="math display">\[ Cov (R_A,R_B) = \sigma_{A,B} = \frac
+{{\sum_{n=1}^{n} [R_{A,t} - E(R_A)] [R_{B,t} -E(R_B)]}} {n-1}
+\]</span></p>
+<p>D. DIVERSIFIKASI RISIKO PORTOFOLIO</p>
+<ul>
+<li>Risiko portofolio dapat turun karena <em>comovement</em> antara dua
+aset.</li>
+<li>Risiko akan semakin turun jika nilai kovarian negatif.</li>
+<li>Risiko portofolio akan semakin terdiversifikasi jika jumlah
+<em>comovement</em> semakin banyak.</li>
+<li>Dua jenis risiko:
+<ul>
+<li>risiko perusahaan –&gt; dapat didiversifikasi/non sistematik</li>
+<li>risiko spesifik/unik/sistematik –&gt;non diversifiable/market
+risk</li>
+</ul></li>
+</ul>
+<h3 id="ilustrasi-perbandingan-kinerja-saham-menggunakan-r">Ilustrasi
+Perbandingan Kinerja Saham Menggunakan R</h3>
+<p>Dengan menggunakan komputer kita tidak perlu lagi menghitung secara
+manual return, risiko, SD, Var, Cov dll. Berikut sebagai ilustrasi
+bagaimana membandingkan kinerja beberapa saham dengan menggunakan
+software <a href="https://www.r-project.org/">R</a>. Data harga saham
+harian diunduh dari <a href="https://finance.yahoo.com">Yahoo
+Finance</a>. Saham yang akan dibandingkan adalah saham BNI, PT Waskita
+Karya, dan PT Aneka Tambang.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h4 id="mengimpor-data-saham-bni.-perhatikan-ticker-saham-bni">Mengimpor
+data saham BNI. Perhatikan ticker saham BNI!</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>           BNI.Open BNI.High BNI.Low BNI.Close BNI.Volume
+2021-04-15     5950     6025    5900      5975   17975900
+2021-04-16     6025     6050    5875      5950   17665900
+2021-04-19     5900     5975    5825      5875   11917800
+2021-04-20     5875     5925    5800      5925    8272500
+2021-04-21     5875     5875    5750      5775   13227700
+2021-04-22     5800     5825    5650      5675   28608300
+           BNI.Adjusted
+2021-04-15     5866.750
+2021-04-16     5842.202
+2021-04-19     5768.561
+2021-04-20     5817.655
+2021-04-21     5670.373
+2021-04-22     5572.185</code></pre>
+<pre><code>           BNI.Open BNI.High BNI.Low BNI.Close BNI.Volume
+2022-04-07     8150     8300    8075      8300   26910300
+2022-04-08     8325     8450    8250      8425   41911800
+2022-04-11     8500     8500    8350      8400   35747700
+2022-04-12     8400     8475    8275      8425   27774600
+2022-04-13     8525     8525    8375      8450   28560500
+2022-04-14     8450     8500    8350      8400   17990600
+           BNI.Adjusted
+2022-04-07         8300
+2022-04-08         8425
+2022-04-11         8400
+2022-04-12         8425
+2022-04-13         8450
+2022-04-14         8400</code></pre>
+<pre><code>[1] &quot;BNI.Open&quot;     &quot;BNI.High&quot;     &quot;BNI.Low&quot;      &quot;BNI.Close&quot;   
+[5] &quot;BNI.Volume&quot;   &quot;BNI.Adjusted&quot;</code></pre>
+<p><img src="return-dan-risiko_files/figure-html5/impor_bni-1.png" width="624" /></p>
+<pre><code>     Index              BNI.Close   
+ Min.   :2021-04-15   Min.   :4580  
+ 1st Qu.:2021-07-18   1st Qu.:5325  
+ Median :2021-10-16   Median :6662  
+ Mean   :2021-10-16   Mean   :6359  
+ 3rd Qu.:2022-01-13   3rd Qu.:7156  
+ Max.   :2022-04-14   Max.   :8500  </code></pre>
+</div>
+<h4 id="kita-lakukan-hal-yang-sama-untuk-saham-pt-waskita-karya">Kita
+lakukan hal yang sama untuk saham PT Waskita Karya</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>           WSKT.Open WSKT.High WSKT.Low WSKT.Close WSKT.Volume
+2021-04-15      1035      1065     1020       1020    43199300
+2021-04-16      1030      1045     1015       1015    27119500
+2021-04-19      1020      1090     1020       1080    88913100
+2021-04-20      1080      1085     1050       1060    34441200
+2021-04-21      1060      1080     1035       1065    26142900
+2021-04-22      1080      1090     1050       1070    28027300
+           WSKT.Adjusted
+2021-04-15          1020
+2021-04-16          1015
+2021-04-19          1080
+2021-04-20          1060
+2021-04-21          1065
+2021-04-22          1070</code></pre>
+<pre><code>           WSKT.Open WSKT.High WSKT.Low WSKT.Close WSKT.Volume
+2022-04-07       545       545      535        535    18894600
+2022-04-08       535       545      530        545    28163900
+2022-04-11       545       545      515        520    46212800
+2022-04-12       520       535      520        530    25672200
+2022-04-13       535       540      525        530    18395300
+2022-04-14       535       540      520        535    34015800
+           WSKT.Adjusted
+2022-04-07           535
+2022-04-08           545
+2022-04-11           520
+2022-04-12           530
+2022-04-13           530
+2022-04-14           535</code></pre>
+<pre><code>[1] &quot;WSKT.Open&quot;     &quot;WSKT.High&quot;     &quot;WSKT.Low&quot;      &quot;WSKT.Close&quot;   
+[5] &quot;WSKT.Volume&quot;   &quot;WSKT.Adjusted&quot;</code></pre>
+<p><img src="return-dan-risiko_files/figure-html5/impor_waskita-1.png" width="624" /></p>
+<pre><code>     Index              WSKT.Close  
+ Min.   :2021-04-15   Min.   : 520  
+ 1st Qu.:2021-07-18   1st Qu.: 635  
+ Median :2021-10-16   Median : 835  
+ Mean   :2021-10-16   Mean   : 815  
+ 3rd Qu.:2022-01-13   3rd Qu.: 960  
+ Max.   :2022-04-14   Max.   :1135  </code></pre>
+</div>
+<h4
+id="kita-lakukan-hal-yang-sama-lagi-untuk-saham-pt-aneka-tambang-tbk">Kita
+lakukan hal yang sama lagi untuk saham PT ANEKA Tambang, Tbk</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>           ANTM.Open ANTM.High ANTM.Low ANTM.Close ANTM.Volume
+2021-04-15      2340      2350     2300       2320   109175800
+2021-04-16      2340      2420     2310       2390   173387400
+2021-04-19      2350      2370     2300       2340    91552300
+2021-04-20      2330      2360     2300       2350    60372200
+2021-04-21      2320      2400     2300       2370   112742900
+2021-04-22      2380      2440     2350       2350   119644900
+           ANTM.Adjusted
+2021-04-15       2303.26
+2021-04-16       2390.00
+2021-04-19       2340.00
+2021-04-20       2350.00
+2021-04-21       2370.00
+2021-04-22       2350.00</code></pre>
+<pre><code>           ANTM.Open ANTM.High ANTM.Low ANTM.Close ANTM.Volume
+2022-04-07      2670      2820     2660       2760   286617900
+2022-04-08      2790      2820     2740       2800   189362100
+2022-04-11      2800      2810     2630       2630   163864600
+2022-04-12      2620      2680     2580       2670    88390900
+2022-04-13      2690      2800     2670       2790   143822800
+2022-04-14      2790      2870     2750       2780   201698200
+           ANTM.Adjusted
+2022-04-07          2760
+2022-04-08          2800
+2022-04-11          2630
+2022-04-12          2670
+2022-04-13          2790
+2022-04-14          2780</code></pre>
+<pre><code>[1] &quot;ANTM.Open&quot;     &quot;ANTM.High&quot;     &quot;ANTM.Low&quot;      &quot;ANTM.Close&quot;   
+[5] &quot;ANTM.Volume&quot;   &quot;ANTM.Adjusted&quot;</code></pre>
+<p><img src="return-dan-risiko_files/figure-html5/impor_antm-1.png" width="624" /></p>
+<pre><code>     Index              ANTM.Close  
+ Min.   :2021-04-15   Min.   :1725  
+ 1st Qu.:2021-07-18   1st Qu.:2270  
+ Median :2021-10-16   Median :2350  
+ Mean   :2021-10-16   Mean   :2344  
+ 3rd Qu.:2022-01-13   3rd Qu.:2470  
+ Max.   :2022-04-14   Max.   :2840  </code></pre>
+</div>
+<h4 id="kita-kombinasikan-semua-data-harga-penutupan-menjadi-satu">Kita
+kombinasikan semua data harga penutupan menjadi satu</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>            BNI WSKT ANTM
+2021-04-15 5975 1020 2320
+2021-04-16 5950 1015 2390
+2021-04-19 5875 1080 2340
+2021-04-20 5925 1060 2350
+2021-04-21 5775 1065 2370
+2021-04-22 5675 1070 2350</code></pre>
+</div>
+<h4
+id="selanjutnya-kita-normalkan-data-agar-perbandingan-kinerja-saham-lebih-adil">Selanjutnya
+kita normalkan data agar perbandingan kinerja saham lebih adil</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 5975</code></pre>
+<pre><code>[1] 1020</code></pre>
+<pre><code>[1] 2320</code></pre>
+<pre><code>                 BNI     WSKT     ANTM
+2021-04-15 1.0000000 1.000000 1.000000
+2021-04-16 0.9958159 0.995098 1.030172
+2021-04-19 0.9832636 1.058824 1.008621
+2021-04-20 0.9916318 1.039216 1.012931
+2021-04-21 0.9665272 1.044118 1.021552
+2021-04-22 0.9497908 1.049020 1.012931</code></pre>
+</div>
+<h4 id="plot-apresiasi-kapital-masing-masing-sekuritas">Plot Apresiasi
+Kapital Masing-Masing Sekuritas</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>[1] 0.5098039 1.4225941</code></pre>
+<p><img src="return-dan-risiko_files/figure-html5/perbandingan_kinerja_secara_visual-1.png" width="624" /></p>
+</div>
+<h4 id="menghitung-capital-gain-saham-bni">Menghitung Capital Gain Saham
+BNI</h4>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>           BNI.Close
+2021-04-15      5975
+2021-04-16      5950
+2021-04-19      5875
+2021-04-20      5925
+2021-04-21      5775
+2021-04-22      5675</code></pre>
+<pre><code>           BNI.Close
+2022-04-07      8300
+2022-04-08      8425
+2022-04-11      8400
+2022-04-12      8425
+2022-04-13      8450
+2022-04-14      8400</code></pre>
+<pre><code>           price lag.price
+2021-04-15  5975        NA
+2021-04-16  5950      5975
+2021-04-19  5875      5950
+2021-04-20  5925      5875
+2021-04-21  5775      5925
+2021-04-22  5675      5775</code></pre>
+<pre><code>           price lag.price
+2022-04-07  8300      8150
+2022-04-08  8425      8300
+2022-04-11  8400      8425
+2022-04-12  8425      8400
+2022-04-13  8450      8425
+2022-04-14  8400      8450</code></pre>
+<pre><code>           price lag.price    price.ret
+2021-04-15  5975        NA           NA
+2021-04-16  5950      5975 -0.004184100
+2021-04-19  5875      5950 -0.012605042
+2021-04-20  5925      5875  0.008510638
+2021-04-21  5775      5925 -0.025316456
+2021-04-22  5675      5775 -0.017316017</code></pre>
+<pre><code>           price lag.price    price.ret
+2022-04-07  8300      8150  0.018404908
+2022-04-08  8425      8300  0.015060241
+2022-04-11  8400      8425 -0.002967359
+2022-04-12  8425      8400  0.002976190
+2022-04-13  8450      8425  0.002967359
+2022-04-14  8400      8450 -0.005917160</code></pre>
+<pre><code>              price.ret
+2021-04-16 -0.004184100
+2021-04-19 -0.012605042
+2021-04-20  0.008510638
+2021-04-21 -0.025316456
+2021-04-22 -0.017316017
+2021-04-23  0.017621145</code></pre>
+<pre><code>              price.ret
+2022-04-07  0.018404908
+2022-04-08  0.015060241
+2022-04-11 -0.002967359
+2022-04-12  0.002976190
+2022-04-13  0.002967359
+2022-04-14 -0.005917160</code></pre>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<pre><code>             price.ret
+nobs        247.000000
+NAs           0.000000
+Minimum      -0.059048
+Maximum       0.065421
+1. Quartile  -0.010695
+3. Quartile   0.013963
+Mean          0.001566
+Median        0.000000
+Sum           0.386872
+SE Mean       0.001234
+LCL Mean     -0.000864
+UCL Mean      0.003997
+Variance      0.000376
+Stdev         0.019392
+Skewness      0.358968
+Kurtosis      0.404076</code></pre>
+</div>
+<ul>
+<li>Untuk menghitung total return BNI gunakan adjusted close price.</li>
+<li>Proses yang sama dapat dilakukan untuk saham Waskita dan Aneka
+Tambang.</li>
+</ul>
+<div class="sourceCode" id="cb28"><pre
+class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

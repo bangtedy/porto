@@ -1,0 +1,128 @@
+---
+title: Instrumen Pendapatan Tetap
+description: |
+  Modul 5 EKSI4203
+author: 
+  - name: Tedy Herlambang
+    url: https://bangtedy.github.io
+    orcid_id: 0000-0002-7296-4357
+date: '2022-05-14'
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Tujuan Pembelajaran
+
+Modul ini membahas instrumen pendapatan tetap yaitu obligasi. Setelah mempelajari modul ini, mahasiswa diharapkan mampu menghitung *nilai* obligasi dan *hasil* obligasi. Lebih khusus, mahasiswa diharapkan mampu:
+
+- [x] menjelaskan pengertian instrumen pendapatan tetap;
+- [x] menjelaskan macam-macam obligasi,
+- [x] menjelaskan pengertian kode obligasi,
+- [x] menjelaskan pengertian nilai instrinsik obligasi,
+- [x] menghitung nilai instrinsik obligasi membayar kupon,
+- [x] menghitung nilai instrinsik obligasi tidak membayar kupon
+- [x] menghitung hasil sekarang obligasi,
+- [x] menghitung hasil sampai jatuh tempo,
+- [x] menghitung hasil sampai ditebus,
+- [x] menghitung nilai pasar obligasi.
+
+<br />
+
+## KEGIATAN BELAJAR 1: PENGERTIAN OBLIGASI
+### A. MACAM-MACAM OBLIGASI
+
+--> Obligasi: hutang jangka panjang yang akan dibayar saat tempo + bunga tetap.
+
+--> When an investor purchases a bond, that person is, for all intents and purposes, making a loan to the bond issuer. 
+
+--> Bonds issues are used to raise funds and can be issued by corporations, governments, or even subagencies of governments (including local municipalities)
+
+1. Obligasi Pemerintah: SUN, SBSN, ORI, SBSN Ritel
+2. Obligasi Municipal: dikeluarkan oleh Pemda provinsi, kota, kabupaten, bandara, atau universitas negeri.
+3. Obligasi Perusahaan: dikeluarkan oleh perusahaan swasta sebagai sekuritas senior
+   - dengan kupon (bunga)atau tidak
+   - obligasi termin (term bond) dan obligasi seri (serial bond)
+
+<br />
+
+## More about bond
+
+- As with any type of loan, the borrowing party is expected to offer something to the lender in exchange for their time and trouble. 
+- In this case, the bond-issuing entity will agree not only to repay the original face value
+of the loan on a specific date (the maturity of the bond) but also to pay the lender interest—or, in bond terminology, coupon payments.
+- Coupon payments are designed to make a bond purchase more acceptable for investors by helping compensate them for the time value of money. 
+- Because investors are parting with money that they have right now in order to make the initial bond purchase but will not see repayment of principal until the maturity date
+of the bond, they will experience the negative impact of time value over the bond term. 
+- When a bond issuer offers periodic coupon payments, this helps offset the negative effect of the delayed receipt of the principal amount for the investor. 
+- Also, because coupon payments will be coming to the investor throughout the term
+of the bond, essentially in installment payments (an annuity), the time value of money plays a critical role in bond transactions and in calculating bond valuation.
+- One way to look at bond investments is to consider the fact that any investor who purchases a bond is essentially buying a future cash flow stream that the bond issuer (or borrower) promises to make as per agreement.
+- Because bonds provide a set amount of cash inflow to their owners, they are often called fixed-income securities. 
+- Thus, future cash flows from the bond are clearly stated per agreement and fixed when the bond sale is completed.
+
+<br />
+
+### B. RISIKO OBLIGASI
+
+- Kemungkinan default/obligasi tidak terbayar
+- Berdasarkan peringkat oleh lembaga pemeringkat: *Moody's Investor Service, Standard and Poor*, PT. Fitch Ratings Indonesia, PT ICRA.
+- Peringkat BERBEDA antar lembaga: 
+  + S&P: AA, A, BBB, BB, B, CCC, CC, C, D.
+  + Moody: Aaa, Aa, A, Bbb, Bb, B, Ccc, Cc, C, D
+
+- Secara umum dibagi dua: 
+  + *investment grade securities*: mampu membayar prinsipal dan bunga dan 
+  + *non-investment grade securities*: obligasi sampah (*junk bond*), risiko defaultnya tinggi. 
+
+<br />
+
+## KEGIATAN BELAJAR 2: PENILAIAN OBLIGASI
+### A. NILAI INSTRINSIK OBLIGASI
+
+--> Nilai instrinsik: perkiraan nilai sebenarnya dari obligasi.
+
+1. Obligasi Membayar Kupon
+
+   - Kupon dibayar secara periodik: setahun sekali, setahun dua kali, setahun 4 kali.
+   
+   $$NO^* = \frac {K_1}{(1+i)^1} + \frac {K_2}{(1+i)^2} + \frac {K_3}{(1+i)^3}+...+ \frac {K_n}{(1+i)^n}+\frac {NJT_n}{(1+i)^n}$$
+   Notasi:
+   - NO<sup>*</sup> = nilai instrinsik obligasi,
+   - i = suku bunga diskonto
+   - K~t~ = nilai kupon ke-t, t=1,2...n, yaitu tingkat suku bunga kupon dikalikandengan nilai par obligasi
+   - NJT~n~ = nilai jatuh tempo obligasi
+
+2. Obligasi Tidak Membayar Kupon
+
+   - Obligasi diskon murni (pure diskon bond)
+   - Dijual dengan harga diskon
+   
+   $$NO^* =\frac {NJT_n}{(1+i)^n}$$
+   
+<br />
+
+### B. HASIL OBLIGASI
+
+1. Hasil Sekarang (*current yield*)
+
+$$Hasil\ Sekarang =\frac {Kupon}{Harga\ Pasar\ Obligasi}$$
+
+
+2. Hasil Sampai Maturiti (*yield to maturity*)
+   - YTM membayar kupon
+   
+   $$NO = \frac {K_1}{(1+YTM)^1} + \frac {K_2}{(1+YTM)^2} + \frac {K_3}{(1+YTM)^3}+...+ \frac {K_n}{(1+YTM)^n}+\frac {NJT_n}{(1+YTM)^n}$$
+   
+   
+   - YTM tidak membayar kupon
+   
+   $$NO = \frac {NJT_n}{(1+YTM)^n}$$
+   
+3. Hasil Sampai ditarik (*yield to call*)
+
+$$NO = \frac {K_1}{(1+YTC)^1} + \frac {K_2}{(1+YTC)^2} + \frac {K_3}{(1+YTC)^3}+...+ \frac {K_n}{(1+YTC)^n}+\frac {NJT_n}{(1+YTC)^n}$$

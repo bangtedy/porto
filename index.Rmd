@@ -1,5 +1,6 @@
 ---
-site: blogdown:::blogdown_site
+title: "Materi"
+site: distill::distill_website
+listing: posts
+creative_commons: CC BY
 ---
-
-<!-- This file is for blogdown only. Please do not edit it. -->
