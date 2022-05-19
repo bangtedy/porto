@@ -17,12 +17,26 @@ Mata kuliah ini membahas kerangka konsep dasar manajemen investasi, pengertian p
 
 Secara umum setelah mempelajari modul ini, diharapkan agar mahasiswa dapat memahami bagaimana mencari dana dan menggunakan dana secara efisien agar tujuan perusahaan dapat tercapai.
 
+Tutorial dilakukan sebanyak 8 kali mencakup 9 modul. Topik-topik yang akan dibahas sebagai berikut:
 
-Referensi Utama:
+:::obj
+
+* Minggu 1 Investasi
+* Minggu 2 Pasar Modal
+* Minggu 3 *Return* dan Risiko
+* Minggu 4 Saham
+* Minggu 5 Instrumen Pendapatan Tetap
+* Minggu 6 Konsep Portofolio
+* Minggu 7 Model Keseimbangan dan Beta
+* Minggu 8 *Online Trading*, Membuat Sendiri Portofolio dan Investasi di Reksadana
+
+:::
+
+### Referensi Utama:
 
 1. Hartono, Jogiyanto (2015) Teori Portofolio dan Analisis Investasi. Buku Materi Pokok EKSI4203. Edisi 3. Penerbit Universitas Terbuka. Tangerang
 
-Referensi Tambahan:
+### Referensi Tambahan:
 
 1. Brigham, Eugene F. dan Joel F. Houston (2015) Fundamentals of Financial Management,
 Concise Eighth Edition. Cengage
