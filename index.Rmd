@@ -4,3 +4,19 @@ site: distill::distill_website
 listing: posts
 creative_commons: CC BY
 ---
+
+```{r, include=FALSE, results='asis'}
+library(metathis)
+
+meta() %>%
+  meta_social(
+    title = "Teori Portofolio dan Analisis Investasi",
+    description = "Materi Teori Portofolio dan Analisis Investasi",
+    url = "https://bangtedy.github.io/porto",
+    image = "",
+    image_alt = "",
+    og_type = "website",
+    twitter_card_type = "summary",
+    twitter_site = NULL
+  )
+```
