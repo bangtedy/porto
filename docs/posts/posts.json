@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2022-05-26-model-keseimbangan-dan-beta/",
+    "title": "Model Keseimbangan dan Beta",
+    "description": "Modul 7 EKSI4203",
+    "author": [
+      {
+        "name": "Tedy Herlambang",
+        "url": "https://bangtedy.github.io"
+      }
+    ],
+    "date": "2022-05-26",
+    "categories": [],
+    "contents": "\r\nPendahuluan\r\nModul ini membahas model-model keseimbangan dan beta (\\(\\beta\\)) sebagai salah satu variabel peting\r\ndi model keseimbangan. Model yang dibahas yaitu CAPM\r\ndan APT. Setelah mempelajari modul ini, mahasiswa\r\ndiharapkan mampu menerapkan konsep model-model keseimbangan dan beta\r\naset tunggal dan portofolio. Secara khusus, mahasiswa diharapkan\r\nmampu:\r\nmenjelaskan pengertian CAPM.\r\nmenjelaskan asumsi-asumis yang digunakan di CAPM.\r\nmenjelaskan pengertian CML (Capital Market Line).\r\nmenjelaskan pengertian SML (Security Market Line).\r\nmenjelaskan penggunaan CAPM untuk analisis aset.\r\nmenerapkan model banyak faktor\r\nmenerapkan model pasar\r\nmenjelaskan konsep beta pasar sebagai pengukur risiko\r\nsistematik.\r\nmenjelaskan konsep beta portofolio.\r\n\r\nKEGIATAN BELAJAR 1: MODEL\r\nKESEIMBANGAN\r\nA. MODEL PENILAIAN ASET\r\nKAPITAL\r\n1. Asumsi-Asumsi CAPM\r\nB. GARIS PASAR MODAL\r\nC. GARIS PASAR SEKURITAS\r\n1. CAPM untuk Aset Tunggal\r\n2. CAPM Tiga Faktor\r\nD. ARBRITAGE PRICING THEORY\r\n1. Asumsi-asumsi APT\r\n2. Hukum Satu Harga\r\n3. Model Faktor\r\n4. Model APT\r\nKEGIATAN BELAJAR 2: Beta\r\nA. PENGERTIAN BETA\r\nB. MENGESTIMASI BETA\r\nC. BETA PORTOFOLIO\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-05-26T13:40:54+07:00",
+    "input_file": "model-keseimbangan-dan-beta.knit.md"
+  },
+  {
     "path": "posts/2022-05-17-konsep-portofolio/",
     "title": "Konsep Portofolio",
     "description": "Modul 6 EKSI4203",
