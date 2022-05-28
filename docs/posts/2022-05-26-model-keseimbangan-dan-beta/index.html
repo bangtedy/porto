@@ -129,7 +129,7 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 <!--/radix_placeholder_rmarkdown_metadata-->
   
   <script type="text/json" id="radix-resource-manifest">
-  {"type":"character","attributes":{},"value":["model-keseimbangan-dan-beta_files/anchor-4.2.2/anchor.min.js","model-keseimbangan-dan-beta_files/bowser-1.9.3/bowser.min.js","model-keseimbangan-dan-beta_files/distill-2.2.21/template.v2.js","model-keseimbangan-dan-beta_files/header-attrs-2.14/header-attrs.js","model-keseimbangan-dan-beta_files/jquery-3.6.0/jquery-3.6.0.js","model-keseimbangan-dan-beta_files/jquery-3.6.0/jquery-3.6.0.min.js","model-keseimbangan-dan-beta_files/jquery-3.6.0/jquery-3.6.0.min.map","model-keseimbangan-dan-beta_files/popper-2.6.0/popper.min.js","model-keseimbangan-dan-beta_files/tippy-6.2.7/tippy-bundle.umd.min.js","model-keseimbangan-dan-beta_files/tippy-6.2.7/tippy-light-border.css","model-keseimbangan-dan-beta_files/tippy-6.2.7/tippy.css","model-keseimbangan-dan-beta_files/tippy-6.2.7/tippy.umd.min.js","model-keseimbangan-dan-beta_files/webcomponents-2.0.0/webcomponents.js"]}
+  {"type":"character","attributes":{},"value":["cml1.png","equ.png","model-keseimbangan-dan-beta_files/anchor-4.2.2/anchor.min.js","model-keseimbangan-dan-beta_files/bowser-1.9.3/bowser.min.js","model-keseimbangan-dan-beta_files/distill-2.2.21/template.v2.js","model-keseimbangan-dan-beta_files/header-attrs-2.14/header-attrs.js","model-keseimbangan-dan-beta_files/jquery-3.6.0/jquery-3.6.0.js","model-keseimbangan-dan-beta_files/jquery-3.6.0/jquery-3.6.0.min.js","model-keseimbangan-dan-beta_files/jquery-3.6.0/jquery-3.6.0.min.map","model-keseimbangan-dan-beta_files/popper-2.6.0/popper.min.js","model-keseimbangan-dan-beta_files/tippy-6.2.7/tippy-bundle.umd.min.js","model-keseimbangan-dan-beta_files/tippy-6.2.7/tippy-light-border.css","model-keseimbangan-dan-beta_files/tippy-6.2.7/tippy.css","model-keseimbangan-dan-beta_files/tippy-6.2.7/tippy.umd.min.js","model-keseimbangan-dan-beta_files/webcomponents-2.0.0/webcomponents.js","sml1.png"]}
   </script>
   <!--radix_placeholder_navigation_in_header-->
 <meta name="distill:offset" content="../.."/>
@@ -2531,20 +2531,33 @@ sistematik.</li>
 KESEIMBANGAN</h2>
 <h3 id="a.-model-penilaian-aset-kapital">A. MODEL PENILAIAN ASET
 KAPITAL</h3>
-<h4 id="asumsi-asumsi-capm">1. Asumsi-Asumsi CAPM</h4>
-<h3 id="b.-garis-pasar-modal">B. GARIS PASAR MODAL</h3>
-<h3 id="c.-garis-pasar-sekuritas">C. GARIS PASAR SEKURITAS</h3>
+<p><img src="equ.png" /></p>
+<h3 id="b.-garis-pasar-modal-gpmcml">B. GARIS PASAR MODAL (GPM/CML)</h3>
+<p><img src="cml1.png" /> <span class="math display">\[E(R_p)= R_{BR} +
+\frac {E(R_M)-R_{BR} }{\sigma_m}.\sigma_p \]</span></p>
+<h3 id="c.-garis-pasar-sekuritas-gpssml">C. GARIS PASAR SEKURITAS
+(GPS/SML)</h3>
+<p><img src="sml1.png" /></p>
 <h4 id="capm-untuk-aset-tunggal">1. CAPM untuk Aset Tunggal</h4>
+<p><span class="math display">\[ E(R_i) = R_{BR} + \beta_i
+[E(R_M)-R_{BR}]\]</span></p>
 <h4 id="capm-tiga-faktor">2. CAPM Tiga Faktor</h4>
+<p><span class="math display">\[ E(R_i) = R_{BR} + \beta_i
+[E(R_M)-R_{BR}] + b_sSMB + b_vHML\]</span></p>
 <h3 id="d.-arbritage-pricing-theory">D. ARBRITAGE PRICING THEORY</h3>
-<h4 id="asumsi-asumsi-apt">1. Asumsi-asumsi APT</h4>
-<h4 id="hukum-satu-harga">2. Hukum Satu Harga</h4>
-<h4 id="model-faktor">3. Model Faktor</h4>
-<h4 id="model-apt">4. Model APT</h4>
+<h4 id="model-apt">Model APT</h4>
+<p><span class="math display">\[ E(R_i) = a_0+ b_{i1} \bar F_1 + b_{i2}
+\bar F_2 + b_{i3} \bar F_3+ ...+b_{in} \bar F_n\]</span></p>
 <h2 id="kegiatan-belajar-2-beta">KEGIATAN BELAJAR 2: Beta</h2>
 <h3 id="a.-pengertian-beta">A. PENGERTIAN BETA</h3>
 <h3 id="b.-mengestimasi-beta">B. MENGESTIMASI BETA</h3>
+<p>–&gt; Menggunakan teknik regresi, variabel dependennya return saham i
+dan variabel independennya adalah return pasar.</p>
+<p><span class="math display">\[ R_i = \alpha_i + \beta_i R_M +
+e_i\]</span></p>
 <h3 id="c.-beta-portofolio">C. BETA PORTOFOLIO</h3>
+<p>–&gt; dihitung dengan cara rata-rata tertimbang dari masing-masing
+beta aset individual yang membentuk portofolio.</p>
 <div class="sourceCode" id="cb1"><pre
 class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
