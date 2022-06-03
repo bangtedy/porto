@@ -1,0 +1,55 @@
+---
+title: Online Trading dan Membuat Portofolio Sendiri
+description: |
+  Modul 8 dan 9/ EKSI4203
+author: 
+  - name: Tedy Herlambang
+    url: https://bangtedy.github.io
+    orcid_id: 0000-0002-7296-4357
+date: '2022-06-03'
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Pendahuluan
+
+Tutorial ini akan membahasa Modul 8 tentang *Online Trading*  dan Modul 9 tentang Membuat Sendiri Portofolio dan Investasi di Reksadana.
+
+Setelah mempelajari Modul 8, mahasiswa diharapan mampu melakukan investasi transaksi aset tunggal secara *online* dengan *e-trading*. Secara khusus, modul ini mengharapka mahasiswa mampu:
+
+1. menjelaskan pengertian *e-trading*
+2. menjelaskan cara memilih pialang
+3. menjelaskan faktor-faktor penting yang perlu dipertimbangkan dalam pemilihan pialang di *e-trading*
+4. menjelaskan persiapan awal yang dibutuhkan di transaksi *e-trading*
+5. menggunakan aplikasi untuk melakukan transaksi di *e-trading*
+6. menampilkan informasi saham di *e-trading*
+7. melakukan pemesanan/order beli di *e-trading*
+8. melakukan pemesanan/order jual di *e-trading*.
+
+Sedangkan Modul 9 membahas mengenai pembuatan portofolio yang profesional baik yang digunakan sendiri ataupun dijual ke publik dalam bentuk reksadana. Setelah mempelajari Modul 9 ini, mahasiswa diharapkan mampu melakukan investasi dalam bentuk portofolio atau membeli reksadana yang tersedia di pasar. Secar khusus modul ini mengharapkan mahasiswa mampu:
+
+1. menjelaskan cara mengeksekusi portofolio
+2. menjelaskan cara mengeksekusi portofolio optimal sudut tertinggi
+3. menjelaskan cara mengeksekusi portofolio risiko terkecil
+4. menjelaskan pengertian reksadana
+5. melakukan investasi dengan cara memilih reksadana berdasarkan kinerja retunrnya
+6. melakukan investasi dengan cara memilih reksadana berdasarkan pengukur Sharpe (RVAR)
+7. melakukan investasi dengan cara memilih reksadana berdasarkan pengukur Treynor (RVOL)
+8. melakukan investasi dengan cara memilih reksadana berdasarkan pengukur Jogi (RDIV)
+9. melakukan investasi dengan cara memilih reksadana berdasarkan pengukur Jensen (Jensen's Alpha)
+10. melakukan investasi dengan cara memilih reksadana berdasarkan pengukur M^2.
+
+## Modul 8: Online Trading
+
+### KB 1: Mengenal Online Trading
+
+
+
+
+
+

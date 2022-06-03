@@ -1,5 +1,22 @@
 [
   {
+    "path": "posts/2022-06-03-online-trading-dan-membuat-portofolio-sendiri/",
+    "title": "Online Trading dan Membuat Portofolio Sendiri",
+    "description": "Modul 8 dan 9/ EKSI4203",
+    "author": [
+      {
+        "name": "Tedy Herlambang",
+        "url": "https://bangtedy.github.io"
+      }
+    ],
+    "date": "2022-06-03",
+    "categories": [],
+    "contents": "\r\nPendahuluan\r\nTutorial ini akan membahasa Modul 8 tentang Online Trading\r\ndan Modul 9 tentang Membuat Sendiri Portofolio dan Investasi di\r\nReksadana.\r\nSetelah mempelajari Modul 8, mahasiswa diharapan mampu melakukan\r\ninvestasi transaksi aset tunggal secara online dengan\r\ne-trading. Secara khusus, modul ini mengharapka mahasiswa\r\nmampu:\r\nmenjelaskan pengertian e-trading\r\nmenjelaskan cara memilih pialang\r\nmenjelaskan faktor-faktor penting yang perlu dipertimbangkan dalam\r\npemilihan pialang di e-trading\r\nmenjelaskan persiapan awal yang dibutuhkan di transaksi\r\ne-trading\r\nmenggunakan aplikasi untuk melakukan transaksi di\r\ne-trading\r\nmenampilkan informasi saham di e-trading\r\nmelakukan pemesanan/order beli di e-trading\r\nmelakukan pemesanan/order jual di e-trading.\r\nSedangkan Modul 9 membahas mengenai pembuatan portofolio yang\r\nprofesional baik yang digunakan sendiri ataupun dijual ke publik dalam\r\nbentuk reksadana. Setelah mempelajari Modul 9 ini, mahasiswa diharapkan\r\nmampu melakukan investasi dalam bentuk portofolio atau membeli reksadana\r\nyang tersedia di pasar. Secar khusus modul ini mengharapkan mahasiswa\r\nmampu:\r\nmenjelaskan cara mengeksekusi portofolio\r\nmenjelaskan cara mengeksekusi portofolio optimal sudut\r\ntertinggi\r\nmenjelaskan cara mengeksekusi portofolio risiko terkecil\r\nmenjelaskan pengertian reksadana\r\nmelakukan investasi dengan cara memilih reksadana berdasarkan\r\nkinerja retunrnya\r\nmelakukan investasi dengan cara memilih reksadana berdasarkan\r\npengukur Sharpe (RVAR)\r\nmelakukan investasi dengan cara memilih reksadana berdasarkan\r\npengukur Treynor (RVOL)\r\nmelakukan investasi dengan cara memilih reksadana berdasarkan\r\npengukur Jogi (RDIV)\r\nmelakukan investasi dengan cara memilih reksadana berdasarkan\r\npengukur Jensen (Jensen’s Alpha)\r\nmelakukan investasi dengan cara memilih reksadana berdasarkan\r\npengukur M^2.\r\nModul 8: Online Trading\r\nKB 1: Mengenal Online Trading\r\n\r\n\r\n\r\n",
+    "preview": {},
+    "last_modified": "2022-06-03T08:29:49+07:00",
+    "input_file": {}
+  },
+  {
     "path": "posts/2022-05-26-model-keseimbangan-dan-beta/",
     "title": "Model Keseimbangan dan Beta",
     "description": "Modul 7 EKSI4203",
